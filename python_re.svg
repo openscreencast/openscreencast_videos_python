@@ -14,7 +14,7 @@
    id="svg7831"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="python_re_match.svg"
+   sodipodi:docname="python_re_findall.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    inkscape:export-filename="/home/paul/todo/klassen_o.png"
@@ -46,14 +46,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.76"
      inkscape:cx="645.35464"
-     inkscape:cy="416.32966"
+     inkscape:cy="418.96124"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
      inkscape:window-width="1378"
      inkscape:window-height="886"
-     inkscape:window-x="760"
-     inkscape:window-y="227"
+     inkscape:window-x="720"
+     inkscape:window-y="212"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7836">
@@ -93,7 +93,7 @@
          sodipodi:role="line"
          x="674.16541"
          y="112.16458"
-         id="tspan3356">Zeichenkunde</tspan><tspan
+         id="tspan3356">Suchen, Teilen, Ersetzen</tspan><tspan
          sodipodi:role="line"
          x="674.16541"
          y="151.20267"
@@ -117,7 +117,7 @@
          sodipodi:role="line"
          x="674.16541"
          y="346.39307"
-         id="tspan2836">Datum: 16.02.2013</tspan><tspan
+         id="tspan2836">Datum: 07.04.2013</tspan><tspan
          sodipodi:role="line"
          x="674.16541"
          y="385.43112"
