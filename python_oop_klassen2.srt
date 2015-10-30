@@ -1,0 +1,107 @@
+1
+00:00:05,000 --> 00:00:12,900
+Hallo - Python-Programmierung - objektorientierte Programmierung - Klassen in Python - Teil 2 - Klassen zum Leben erwecken
+
+2
+00:00:13,000 --> 00:00:16,900
+Die Klasse Car wurde definiert. Bisher gibt es aber noch keine Instanz dieser Klasse
+
+3
+00:00:17,000 --> 00:00:20,900
+Im Folgendem werden zwei Car-Objekte erstellt
+
+4
+00:00:21,000 --> 00:00:27,900
+Die Zeilen wurden im Voraus gespeichert als Datei BeispielKlasseCar.py im Persoenlichen Ordner
+
+5
+00:00:28,000 --> 00:00:30,900
+und die Datei wurde als ausfuehrbar markiert
+
+6
+00:00:31,000 --> 00:00:46,900
+Ausfuehren: python BeispielKlasseCar.py (Gross- und Kleinschreibung beachten)
+
+7
+00:00:47,000 --> 00:00:53,900
+In den Zeilen 22 und 23 werden Instanzen der Klasse Car erstellt
+
+8
+00:00:54,000 --> 00:01:06,900
+Dabei wird implizit die Funktion __init__() aufgerufen, die in Zeile 5 definiert wurde
+
+9
+00:01:07,000 --> 00:01:15,900
+Fuer car1 werden keine Parameter uebergeben, sodass die Standard-Parameter greifen (speed=0)
+
+10
+00:01:16,000 --> 00:01:30,900
+Fuer car2 wird dahingegen speed=50 uebergeben, so dass das speed-Attribut dieser Car-Instanz von Anfang an auf 50 gesetzt wird
+
+11
+00:01:31,000 --> 00:01:42,900
+Die Zeilen 24 und 25 veranschaulichen dies: Hier wird jeweils das speed-Attribut der beiden Car-Objekte ausgelesen
+
+12
+00:01:43,000 --> 00:01:52,900
+Fuer car1 ist es 0, fuer car2 erwartungsgemaess 50
+
+13
+00:01:53,000 --> 00:02:01,900
+In den Zeilen 26 und 27 wird car1 jeweils beschleunigt
+
+14
+00:02:03,000 --> 00:02:09,900
+Da die Beschleunigung acceleration der Klassendefinition mit 5 angegeben wurde
+
+15
+00:02:10,000 --> 00:02:13,900
+wird das speed-Attribut jeweils um 5 erhoeht
+
+16
+00:02:14,000 --> 00:02:20,900
+In Zeile 28 wird die brake() Methode von car2 aufgerufen
+
+17
+00:02:21,000 --> 00:02:26,900
+Das speed-Attribut vermindert sich damit von 50 auf 45
+
+18
+00:02:27,000 --> 00:02:35,900
+Zeile 29 zeigt, dass Klassenmethoden nicht immer Attribute der Klasse manipulieren muessen
+
+19
+00:02:36,000 --> 00:02:43,900
+Hier hupt car1, indem die aufgerufene Methode eine entsprechende Meldung auf dem Bildschirm ausgibt
+
+20
+00:02:44,000 --> 00:02:53,900
+Das Beispiel zeigt, wie aus dem Bauplan Car zwei Car-Objekte erstellt
+
+21
+00:02:54,000 --> 00:02:57,900
+und an die Namen car1 bzw. car2 gebunden wurden
+
+22
+00:02:58,000 --> 00:03:00,900
+Diese Objekte sind voellig unabhaengig voneinander
+
+23
+00:03:01,000 --> 00:03:08,900
+Veränderungen am Attribut speed von car1 wirken sich nicht auf car2 aus und umgekehrt
+
+24
+00:03:09,000 --> 00:03:14,900
+Theoretisch koennten nun beliebig viele weitere Car-Objekte erstellt werden
+
+25
+00:03:15,000 --> 00:03:19,900
+Tschau und viel Glueck
+
+26
+00:03:20,000 --> 00:03:20,001
+Quelle des Textes: http://www.freiesmagazin.de/freiesMagazin-2011-01 Autor: Daniel Noegel
+
+27
+00:03:20,002 --> 00:03:20,003
+Lizenz des Untertitel-Dokuments und des Textes: http://creativecommons.org/licenses/by-sa/3.0/

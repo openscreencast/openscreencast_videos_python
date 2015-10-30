@@ -1,0 +1,159 @@
+1
+00:00:02,000 --> 00:00:09,900
+Hallo - Python-Programmierung - Klassen in Python - Vererbung
+
+2
+00:00:10,000 --> 00:00:16,900
+Die Zeilen wurden im Voraus gespeichert als Datei BeispielKlasseRacer.py im Persoenlichen Ordner
+
+3
+00:00:17,000 --> 00:00:19,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:20,000 --> 00:00:24,900
+Vererbung ist ein weiteres maechtiges Element der OOP
+
+5
+00:00:25,000 --> 00:00:29,900
+Es ist damit moeglich, Attribute und Methoden von anderen Klassen zu erben
+
+6
+00:00:30,000 --> 00:00:33,900
+und weitere Attribute und Methoden hinzuzufuegen
+
+7
+00:00:34,000 --> 00:00:42,900
+So koennen bequem Klassen konstruiert werden, die aufeinander aufbauen und sich gegenseitig erweitern
+
+8
+00:00:43,000 --> 00:00:53,900
+Oben wurde bereits die Klasse Car (Zeile 4 bis Zeile 20) fuer eine fiktive Rennsimulation definiert
+
+9
+00:00:54,000 --> 00:00:57,900
+Durch Vererbung lassen sich spezifischere Klassen von Autos erstellen
+
+10
+00:00:58,000 --> 00:01:05,900
+etwa eine Rennwagenklasse mit hoher Beschleunigung und hoher Endgeschwindigkeit
+
+11
+00:01:06,000 --> 00:01:16,900
+Die Definition von BeispielKlasseRacer.py aehnelt sehr der bei der Klasse Car
+
+12
+00:01:17,000 --> 00:01:23,900
+Allerdings wird hier von Car geerbt (Zeile 22)
+
+13
+00:01:24,000 --> 00:01:32,900
+Die neue Klasse Racer hat also zunaechst die gleichen Attribute und Methoden wie die Klasse Car
+
+14
+00:01:33,000 --> 00:01:37,900
+Die Init-Methode unterschiedet sich aber schon deutlich
+
+15
+00:01:38,000 --> 00:01:42,900
+Sie kennt neben dem Parameter self nur noch den Parameter color
+
+16
+00:01:43,000 --> 00:01:52,900
+Nun wurde zwar von der Klasse Car geerbt, diese wurde aber noch nicht initialisiert
+
+17
+00:01:53,000 --> 00:02:01,900
+Irgendwie soll die Racer-Klasse ja die gleichen Attribute erhalten, wie die Car-Klasse (speed, acceleration etc.)
+
+18
+00:02:02,000 --> 00:02:05,900
+Dies geschieht in Zeile 24
+
+19
+00:02:06,000 --> 00:02:16,900
+Die Init-Methode wird hier deshalb explizit aufgerufen, damit als erster Parameter (self)
+
+20
+00:02:17,000 --> 00:02:23,900
+eine Referenz auf das neue Racer-Objekt uebergeben werden kann
+
+21
+00:02:24,000 --> 00:02:31,900
+Nach der Initialisierung in Zeile 24 hat das Racer-Objekt also die Attribute speed, max_speed
+
+22
+00:02:32,000 --> 00:02:37,900
+und acceleration mit den Werten 0, 400 und 10
+
+23
+00:02:38,000 --> 00:02:41,900
+Ausserdem noch das Attribut color
+
+24
+00:02:42,000 --> 00:02:52,900
+In Zeile 25 erhaelt die Klasse Racer ein zusaetzliches Attribut
+
+25
+00:02:53,000 --> 00:02:58,900
+Da die Wagen der Racer-Klasse eine manuelle Schaltung erhalten sollen
+
+26
+00:02:59,000 --> 00:03:06,900
+wird der gerade eingelegte Gang an das Attribut current_gear gebunden
+
+27
+00:03:07,000 --> 00:03:16,900
+Die Bedeutung der drei Funktionen honk(), shift_up() sowie shift_down() lassen sich gut ablesen
+
+28
+00:03:17,000 --> 00:03:31,900
+OK - Speichern und Ausfuehren - python BeispielKlasseRacer.py
+
+29
+00:03:32,000 --> 00:03:45,900
+Zunaechst wird also eine Instanz der Klasse Racer erstellt (Zeile 38) und an den Namen ferrari gebunden
+
+30
+00:03:46,000 --> 00:03:52,900
+Der Aufruf der Methode honk() fuehrt bei Instanzen der Car-Klasse zur Ausgabe von Tuuuuut Tuuuut
+
+31
+00:03:53,000 --> 00:03:59,900
+bei Instanzen der Racer-Klasse aber zu Tuuuuut Tuuuut Tuuuut (3x Tuuuut)
+
+32
+00:04:02,000 --> 00:04:11,900
+Die Methode honk() der Klasse Racer ueberschreibt also die gleichnamige Methode der Elternklasse
+
+33
+00:04:12,000 --> 00:04:18,900
+die neuen Methoden shift_up() und shift_down() erweitern die urspruengliche Car-Klasse
+
+34
+00:04:19,000 --> 00:04:29,900
+wiederum wird deutlich, dass die Methode accelerate() offensichtlich von der Car-Klasse geerbt wurde
+
+35
+00:04:30,000 --> 00:04:36,900
+Obwohl sie in der Racer-Klasse nicht definiert wurde, steht sie zur Verfuegung
+
+36
+00:04:37,000 --> 00:04:46,900
+und zeigt das gleiche Verhalten wie in der Car-Klasse (Zeile 41 und 42)
+
+37
+00:04:47,000 --> 00:04:52,900
+Das sind die Ausgaben
+
+38
+00:04:55,000 --> 00:04:58,900
+OK - Tschau und viel Glueck
+
+39
+00:04:59,000 --> 00:04:59,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2011-01 - „Python – Teil 4: Klassenunterschiede“ von Daniel Noegel
+
+40
+00:04:59,002 --> 00:04:59,003
+Lizenz: http://creativecommons.org/licenses/by-sa/3.0/deed.de
