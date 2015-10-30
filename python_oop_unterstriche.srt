@@ -1,0 +1,131 @@
+1
+00:00:07,000 --> 00:00:14,900
+Hallo - Python-Programmierung - Klassen in Python - Die Sache mit den Unterstrichen
+
+2
+00:00:15,000 --> 00:00:21,900
+Attribute und Methoden in Python kommen bisweilen mit allerlei Unterstrichen daher
+
+3
+00:00:22,000 --> 00:00:25,900
+Es gibt drei Varianten, die dabei zu unterscheiden sind
+
+4
+00:00:26,000 --> 00:00:32,900
+Da es dabei haeufig zu Missverstaendnissen und Fehlern kommt, sollen die drei Varianten kurz angeschnitten werden
+
+5
+00:00:33,000 --> 00:00:37,900
+Zwei Unterstriche vor und nach dem Methodennamen
+
+6
+00:00:38,000 --> 00:00:44,900
+Hierbei handelt es sich um spezielle Methoden, die auf bestimmte Aufrufe reagieren
+
+7
+00:00:45,000 --> 00:00:57,900
+So wurde bereits eroertert, dass der erste Aufruf von MeineKlasse() die __init__-Methode der entsprechenden Klasse aufruft
+
+8
+00:00:58,000 --> 00:01:07,900
+Die Methode __add__ wiederum wird aufgerufen, wenn die Klasse links von einem +-Operator steht
+
+9
+00:01:08,000 --> 00:01:24,900
+x = MeineKlasse() x + 3 wird also als x = MeineKlasse() x.__add__(3) interpretiert
+
+10
+00:01:25,000 --> 00:01:33,900
+Analog gibt es Methoden fuer viele andere mathematische Operatoren. Auch Operatoren fuer Listen oder Dictionaries gibt es
+
+11
+00:01:34,000 --> 00:01:56,900
+x = MeineKlasse() x["test"] ruft intern etwa die Methode __getitem__() auf: x = MeineKlasse() x.__getitem__("test")
+
+12
+00:01:57,000 --> 00:02:05,900
+Kurz und buendig erklaert: Von doppelten Unterstrichen umgebene Methodennamen stehen fuer Spezialmethoden von Klassen
+
+13
+00:02:06,000 --> 00:02:10,900
+Entsprechend sollten sie auch nur in diesem Zusammenhang genutzt werden
+
+14
+00:02:11,000 --> 00:02:21,900
+Durch die Spezialmethoden ist es moeglich, eigene Klassen wie Listen, Zeichenketten oder Zahlen agieren zu lassen bzw. auf die entsprechenden Operatoren zu reagieren
+
+15
+00:02:22,000 --> 00:02:26,900
+Eine uebersicht verschiedener Spezialmethoden findet sich in der Python-Dokumentation
+
+16
+00:02:27,000 --> 00:02:38,900
+Einfacher Unterstrich vor Attributen. Hierbei handelt es sich lediglich um eine Konvention, um ein Attribut als privat zu markieren
+
+17
+00:02:39,000 --> 00:02:44,900
+Python kennt aber, anders als andere Programmiersprachen, keine richtigen privaten Variablen
+
+18
+00:02:45,000 --> 00:02:51,900
+Daher ist ein einfacher Unterstrich eher als Hinweis oder als eine Erinnerung zu verstehen
+
+19
+00:02:52,000 --> 00:02:57,900
+Dieses Attribut ist privat und kein Teil der offiziellen Schnittstelle
+
+20
+00:02:58,000 --> 00:03:09,900
+hier z.B. ein Beispiel, hier die beiden Klassen Test und Test2
+
+21
+00:03:10,000 --> 00:03:16,900
+Doppelter Unterstrich vor Attributen, hoechstens ein Unterstrich danach
+
+22
+00:03:17,000 --> 00:03:27,900
+Auch hiermit werden private Variablen markiert. Im Unterschied zum vorherigen Abschnitt werden diese aber zur Laufzeit umbenannt
+
+23
+00:03:28,000 --> 00:03:34,900
+Die Umbenennung von Attributen mit zwei Unterstrichen wird in Python Name Mangling genannt
+
+24
+00:03:35,000 --> 00:03:47,900
+Durch diese Umbenennung soll verhindert werden, dass Klassen, die voneinander erben, versehentlich mit ihren Attributen die Attribute der Elternklasse ueberschreiben
+
+25
+00:03:48,000 --> 00:03:56,900
+Speichern und Ausfuehren, python TestKlassen.py
+
+26
+00:03:57,000 --> 00:04:07,900
+Das ist das Ergebnis der Zeile 26, und das ist das Ergebnis der Zeile 27
+
+27
+00:04:08,000 --> 00:04:19,900
+Das Spezialattribut __dict__ referenziert ein Dict mit allen Attributen einer Klasse
+
+28
+00:04:20,000 --> 00:04:28,900
+Hier ist deutlich zu erkennen, was Name Mangling bewirkt: den jeweiligen Attributen wird der Klassenname vorangestellt
+
+29
+00:04:29,000 --> 00:04:49,900
+So koennen Eltern- und Kindklasse (Test und Test2 also) die gleichen Attribute haben, ohne dass das Attribut der Elternklasse ueberschrieben wird.
+
+30
+00:04:50,000 --> 00:04:59,900
+Aber auch das Name Mangling ist keine Sicherheitsfunktion. Rein private Attribute gibt es in Python nicht
+
+31
+00:05:00,000 --> 00:05:02,900
+Tschau und viel Glueck
+
+32
+00:05:03,000 --> 00:05:03,001
+Quelle des Textes: http://www.freiesmagazin.de/freiesMagazin-2011-01 Autor: Daniel Noegel
+
+33
+00:05:03,002 --> 00:05:03,003
+Lizenz des Untertitel-Dokuments und des Textes: http://creativecommons.org/licenses/by-sa/3.0/
