@@ -1,0 +1,195 @@
+1
+00:00:05,000 --> 00:00:12,900
+Hallo - Python-Programmierung - objektorientierte Programmierung - Klassen in Python
+
+2
+00:00:13,000 --> 00:00:20,900
+Bei der objektorientierten Programmierung OOP handelt es sich um ein sogenanntes Programmierparadigma
+
+3
+00:00:21,000 --> 00:00:24,900
+also um ein bestimmtes Entwurfsmuster beim Programmieren
+
+4
+00:00:25,000 --> 00:00:30,900
+Bei der OOP wird versucht, Daten und Funktionen zu sinnvollen Einheiten zusammenzufassen
+
+5
+00:00:31,000 --> 00:00:33,900
+und an sogenannte Objekte zu binden
+
+6
+00:00:34,000 --> 00:00:41,900
+Neben Objekten gibt es zumindest noch drei weitere wichtige Begriffe im Zusammenhang mit objektorientierter Programmierung
+
+7
+00:00:42,000 --> 00:00:48,900
+die im Folgenden immer wieder auftauchen: Klassen, Attribute und Methoden
+
+8
+00:00:49,000 --> 00:00:54,900
+Als Beispiel sollen fuer eine Rennsimulation unterschiedliche Autos zur Verfuegung stehen
+
+9
+00:00:55,000 --> 00:00:59,900
+Diese Autos unterscheiden sich in Laenge, Gewicht, Geschwindigkeit, Beschleunigung, Farbe etc.
+
+10
+00:01:00,000 --> 00:01:07,900
+Wenn nun 20 unterschiedliche Autos gleichzeitig um die Wette fahren, muessen viele Daten verwaltet werden
+
+11
+00:01:08,000 --> 00:01:12,900
+Es bietet sich an, diese Daten jeweils zusammenzufassen und zu buendeln
+
+12
+00:01:13,000 --> 00:01:18,900
+So koennte es beispielsweise eine Objekt Auto mit folgenden Eigenschaften geben:
+
+13
+00:01:19,000 --> 00:01:23,900
+Laenge, Gewicht, Geschwindigkeit, Beschleunigung, Farbe
+
+14
+00:01:24,000 --> 00:01:31,900
+Diese Definition der spaeteren Auto-Objekte im Quelltext eines Programmes nennt man Klasse
+
+15
+00:01:32,000 --> 00:01:38,900
+Jedes Objekt wird aus dieser Klasse erstellt - man spricht auch von der Instanz einer Klasse
+
+16
+00:01:39,000 --> 00:01:44,900
+Klasse und Objekt verhalten sich also stark vereinfacht ausgedrueckt so zueinander
+
+17
+00:01:45,000 --> 00:01:48,900
+wie Bauplan und Auto auf der Strasse
+
+18
+00:01:49,000 --> 00:01:57,900
+Bei Laenge, Gewicht und den anderen Angaben handelt es sich offensichtlich um Eigenschaften der jeweiligen Autos
+
+19
+00:01:58,000 --> 00:02:00,900
+Eigenschaften von Objekten nennt man Attribute
+
+20
+00:02:01,000 --> 00:02:08,900
+Objekte koennen aber auch Funktionen besitzen - also etwa bremse_ab() oder gib_gas()
+
+21
+00:02:09,000 --> 00:02:14,900
+Diese Funktionen von Klassen bzw. Objekten nennt man Methoden
+
+22
+00:02:15,000 --> 00:02:27,900
+Das Beispiel BeispielKlasseCar.py zeigt, wie man eine Auto-Klasse in Python umsetzt
+
+23
+00:02:28,000 --> 00:02:32,900
+In Zeile 4 wird die Klasse definiert
+
+24
+00:02:33,000 --> 00:02:37,900
+Dies wird durch das Schluesselwort class gekennzeichnet
+
+25
+00:02:38,000 --> 00:02:44,900
+In Klammern dahinter wird angegeben, von welchen anderen Klassen die neue Klasse erben soll
+
+26
+00:02:45,000 --> 00:02:51,900
+In aelteren Python-Versionen sollte hier immer von object geerbt werden
+
+27
+00:02:52,000 --> 00:02:56,900
+nur dann steht der volle Funktionsumfang der Klassen in Python zu Verfuegung
+
+28
+00:02:57,000 --> 00:03:05,900
+Wer bereits Python 3 verwendet, verzichtet auf diese Angabe und hat dennoch den vollen Funktionsumfang der Klassen
+
+29
+00:03:06,000 --> 00:03:14,900
+Wie jede Kontrollstruktur in Python wird auch der Kopf der Klasse mit einem Doppelpunkt abgeschlossen
+
+30
+00:03:15,000 --> 00:03:26,900
+In Zeile 5 wird die Spezialmethode __init__ definiert
+
+31
+00:03:27,000 --> 00:03:34,900
+Diese wird aufgerufen, wenn eine Instanz der Klasse (also ein Objekt) erstellt wird
+
+32
+00:03:35,000 --> 00:03:44,900
+Die Methode __init__ wird hier mit fuenf Parametern definiert: self, speed, max_speed, acceleration und color
+
+33
+00:03:45,000 --> 00:03:57,900
+In Python muss jede Methode (egal ob Spezialmethoden wie __init__() oder eigene Methoden wie brake()) als erstes den Parameter self akzeptieren
+
+34
+00:03:58,000 --> 00:04:05,900
+Durch diesen Parameter kann spaeter zu jeder Zeit auf die Attribute und Methoden eines Objektes zugegriffen werden
+
+35
+00:04:06,000 --> 00:04:14,900
+self ist also - wie der Name schon andeutet - eine (Selbst)Referenz des spaeteren Objektes
+
+36
+00:04:15,000 --> 00:04:22,900
+Das mag zunaechst umstaendlich und laestig wirken - tatsaechlich gibt es aber gute Gruende fuer dieses Vorgehen
+
+37
+00:04:23,000 --> 00:04:28,900
+Die uebrigen Parameter (speed, color) sind optional
+
+38
+00:04:29,000 --> 00:04:34,900
+Sie definieren die Standardwerte fuer das Auto-Objekt
+
+39
+00:04:35,000 --> 00:04:41,900
+In den Zeilen 6 bis 9 werden die Parameter an Klassenattribute gebunden
+
+40
+00:04:42,000 --> 00:04:48,900
+Erst dadurch haben die spaeteren Objekte auch tatsaechlich die entsprechenden Eigenschaften
+
+41
+00:04:49,000 --> 00:04:54,900
+In Zeile 11 wird eine Methode brake() definiert
+
+42
+00:04:55,000 --> 00:04:59,900
+Als Klassenmethode muss auch sie den Parameter self akzeptieren
+
+43
+00:05:00,000 --> 00:05:10,900
+In Zeile 12 wird deutlich warum
+
+44
+00:05:11,000 --> 00:05:17,900
+Ueber diesen Parameter kann wieder auf das in Zeile 6 definierte Attribut speed zugegriffen werden
+
+45
+00:05:18,000 --> 00:05:26,900
+Im Fall der Methode brake() wird das Attribut speed um die Hoehe des Attributs acceleration reduziert
+
+46
+00:05:27,000 --> 00:05:38,900
+In den Zeilen 15 und 19 werden weiterhin noch die Methoden accelerate() und honk() definiert
+
+47
+00:05:40,000 --> 00:05:43,900
+Tschau und viel Glueck
+
+48
+00:05:44,000 --> 00:05:44,001
+Quelle des Textes: http://www.freiesmagazin.de/freiesMagazin-2011-01 Autor: Daniel Noegel
+
+49
+00:05:44,002 --> 00:05:44,003
+Lizenz des Untertitel-Dokuments und des Textes: http://creativecommons.org/licenses/by-sa/3.0/

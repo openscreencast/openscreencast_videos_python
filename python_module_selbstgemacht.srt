@@ -1,0 +1,135 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Module selbst gemacht
+
+2
+00:00:09,000 --> 00:00:11,900
+Das os-Modul erscheint noch recht bodenstaendig
+
+3
+00:00:12,000 --> 00:00:15,900
+Bisher wurde damit der Inhalt eines Verzeichnisses aufgelistet und ueberprueft
+
+4
+00:00:16,000 --> 00:00:19,900
+ob eine bestimmte Datei ein Ordner oder eine Datei ist
+
+5
+00:00:20,000 --> 00:00:23,900
+Darueber hinaus gibt es aber Module fuer grafische Oberflaechen
+
+6
+00:00:24,000 --> 00:00:26,900
+fuer Datenbanken, fuer die Bildbearbeitung usw. 
+
+7
+00:00:27,000 --> 00:00:31,900
+Nicht alle diese Module gehoeren dabei zum Standardumfang der Sprache
+
+8
+00:00:32,000 --> 00:00:34,900
+die fehlenden lassen sich aber leicht ueber die Paketquellen
+
+9
+00:00:35,000 --> 00:00:39,900
+oder das eigens fuer Python entwickelte EasyInstall-System installieren
+
+10
+00:00:40,000 --> 00:00:45,900
+Es stellt sich nun natuerlich die Frage, wie sich derartige Module selbst erstellen lassen
+
+11
+00:00:46,000 --> 00:00:52,900
+Ein Python-Modul ist zunaechst naemlich nichts anderes als eine Textdatei mit der Endung .py
+
+12
+00:00:53,000 --> 00:01:02,900
+Die Funktion boxify(), definiert in Zeile 4, soll im Folgenden in ein eigenes Modul ausgegliedert werden
+
+13
+00:01:03,000 --> 00:01:08,900
+Diese Zeilen werden in die Datei box.py gespeichert
+
+14
+00:01:09,000 --> 00:01:12,900
+Damit wurde nun das Modul box erstellt
+
+15
+00:01:13,000 --> 00:01:20,900
+Der Modulname entspricht also immer dem Dateinamen abzueglich der Endung .py
+
+16
+00:01:21,000 --> 00:01:25,900
+Um dieses Modul nun verwenden zu koennen, wird eine weitere Python-Datei
+
+17
+00:01:26,000 --> 00:01:31,900
+im selben Verzeichnis erstellt: Die Datei myprog.py
+
+18
+00:01:32,000 --> 00:01:38,900
+In Zeile 4 wird das selbst erstellte Box-Modul importiert
+
+19
+00:01:39,000 --> 00:01:45,900
+In Zeile 6 wird der Benutzer zur Eingabe seines Namens aufgefordert
+
+20
+00:01:46,000 --> 00:01:49,900
+In Zeile 7 schliesslich wird die Funktion boxify() aus dem box-Modul
+
+21
+00:01:50,000 --> 00:01:52,900
+mit dem eingegebenen Namen aufgerufen
+
+22
+00:01:53,000 --> 00:01:56,900
+Das Resultat wird mit print auf dem Bildschirm ausgegeben
+
+23
+00:01:57,000 --> 00:02:04,900
+Speichern und Ausfuehren - python myprog.py
+
+24
+00:02:05,000 --> 00:02:11,900
+Namen eingeben - und so wird die Funktionen boxify() ausgefuehrt mit dem Namen
+
+25
+00:02:12,000 --> 00:02:16,900
+Der Python-Interpreter hat eine recht genaue Vorstellung davon
+
+26
+00:02:17,000 --> 00:02:19,900
+in welchen Verzeichnissen sich ein Modul befinden darf
+
+27
+00:02:20,000 --> 00:02:25,900
+Befindet sich das Modul nicht in einem dieser Verzeichnisse, kommt es zu einem Fehler
+
+28
+00:02:26,000 --> 00:02:31,900
+Der Python-Interpreter schaut aber zusaetzlich auch immer in das Programmverzeichnis 
+
+29
+00:02:32,000 --> 00:02:35,900
+hier also etwa in das Verzeichnis der Datei myprog.py
+
+30
+00:02:36,000 --> 00:02:41,900
+So lange die selbst erstellten Module in diesem Verzeichnis zu finden sind
+
+31
+00:02:42,000 --> 00:02:44,900
+befindet sich der Anfaenger also auf der sicheren Seite
+
+32
+00:02:46,000 --> 00:02:48,900
+Tschau und viel Glueck
+
+33
+00:02:50,000 --> 00:02:50,001
+Quelle des Textes: http://www.freiesmagazin.de/freiesMagazin-2010-12 Autor: Daniel Noegel
+
+34
+00:02:50,002 --> 00:02:50,003
+Lizenz des Untertitel-Dokuments und des Textes: http://creativecommons.org/licenses/by-sa/3.0/
