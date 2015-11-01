@@ -1,0 +1,83 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Mit OpenCV die Bildgroesse veraendern
+
+2
+00:00:09,000 --> 00:00:15,900
+Bevor man loslegen kann muessen noch einige Pakete Bestandteil des Systems werden
+
+3
+00:00:16,000 --> 00:00:26,900
+und zwar mit dem Kommando su -c "yum install opencv-python" ENTER - Passwort eingeben
+
+4
+00:00:27,000 --> 00:00:30,900
+Sobald die Pakete heruntergeladen worden und installiert sind
+
+5
+00:00:31,000 --> 00:00:36,900
+kann man sich dann ein Python-Skript erstellen - mit diesen Zeilen
+
+6
+00:00:37,000 --> 00:00:45,900
+Die Datei speichert man dann und macht die Datei ausfuehrbar
+
+7
+00:00:46,000 --> 00:00:55,900
+Datei als Programm ausfuehren anklicken - Schliessen
+
+8
+00:00:56,000 --> 00:01:00,900
+Das ist das Bild wo ich die Groesse veraendern moechte
+
+9
+00:01:01,000 --> 00:01:07,900
+In Zeile 4 des Skripts wird das Modul cv (opencv) importiert
+
+10
+00:01:08,000 --> 00:01:15,900
+In Zeile 5 wird das Bild das man hier sieht geladen
+
+11
+00:01:16,000 --> 00:01:19,900
+In Zeile 6 und 7 wird die Groesse veraendert
+
+12
+00:01:20,000 --> 00:01:25,900
+und in Zeile 8 wird das neue Bild mit der neuen Groesse gespeichert - OK
+
+13
+00:01:26,000 --> 00:01:29,900
+Es kann los gehen - Speichern und Ausfuehren
+
+14
+00:01:30,000 --> 00:01:41,900
+Im Persoenlichen Ordner - python r.py (r.py - der Dateiname)
+
+15
+00:01:42,000 --> 00:01:48,900
+und da ist das Bild mit der neuen Groesse
+
+16
+00:01:49,000 --> 00:01:55,900
+man kann nicht nur Verkleinern sondern auch Vergroessern
+
+17
+00:01:56,000 --> 00:02:01,900
+indem ich hier statt / * eingebe
+
+18
+00:02:02,000 --> 00:02:12,900
+OK - und die neue Datei soll heissen sn2.png - OK - Speichern und Ausfuehren
+
+19
+00:02:13,000 --> 00:02:20,900
+OK - und das Bild ist doppelt so gross
+
+20
+00:02:25,000 --> 00:02:26,900
+Tschau und viel Glueck
+
+21
+00:02:28,000 --> 00:02:28,001
+Dieses Untertitel-Dokument (.srt) steht unter der Lizenz: http://creativecommons.org/publicdomain/zero/1.0/

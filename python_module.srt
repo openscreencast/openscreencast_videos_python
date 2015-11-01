@@ -1,0 +1,223 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Module
+
+2
+00:00:09,000 --> 00:00:14,900
+Die Zeilen wurden im Voraus gespeichert als Datei modul.py im Persoenlichen Ordner
+
+3
+00:00:15,000 --> 00:00:17,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:18,000 --> 00:00:19,900
+Module bieten eine einfache Moeglichkeit
+
+5
+00:00:20,000 --> 00:00:23,900
+seine Skripte um zusaetzliche Funktionen zu erweitern
+
+6
+00:00:24,000 --> 00:00:25,900
+Es wurde bereits angesprochen
+
+7
+00:00:26,000 --> 00:00:29,900
+dass Python mit einer Vielzahl zusaetzlicher Bibliotheken ausgeliefert wird
+
+8
+00:00:30,000 --> 00:00:33,900
+diese Bibliotheken heissen in Python Module
+
+9
+00:00:34,000 --> 00:00:40,900
+Sie werden durch den Befehl import in ein eigenes Skript eingebunden
+
+10
+00:00:41,000 --> 00:00:44,900
+In Zeile 4 wird der Interpreter angewiesen
+
+11
+00:00:45,000 --> 00:00:49,900
+das Modul os im jetzigen Skript verfuegbar zu machen
+
+12
+00:00:50,000 --> 00:00:53,900
+Dieses Modul enthaelt verschiedene Funktionen zum Kopieren
+
+13
+00:00:54,000 --> 00:00:55,900
+Verschieben oder Loeschen von Dateien
+
+14
+00:00:56,000 --> 00:01:00,900
+Auch das Auflisten des aktuellen Verzeichnisinhaltes gehoert dazu
+
+15
+00:01:01,000 --> 00:01:08,900
+In Zeile 8 wird die Funktion listdir() des Modules os aufgerufen
+
+16
+00:01:09,000 --> 00:01:13,900
+Der Parameter . verweist auf das aktuelle Verzeichnis
+
+17
+00:01:14,000 --> 00:01:18,900
+Die Funktion erstellt eine Liste mit allen Dateien und Ordnern
+
+18
+00:01:19,000 --> 00:01:22,900
+des aktuellen Verzeichnisses und gibt diese Liste zurueck
+
+19
+00:01:23,000 --> 00:01:25,900
+Die Variable files zeigt nun auf diese Liste
+
+20
+00:01:26,000 --> 00:01:33,900
+In Zeile 9 wird eine for-Schleife definiert, die ueber die zuvor erstellte Liste iteriert
+
+21
+00:01:34,000 --> 00:01:40,900
+In Zeile 10 wird ueberprueft, ob es sich bei dem jeweiligen Eintrag
+
+22
+00:01:41,000 --> 00:01:44,900
+um eine Datei oder ein Verzeichnis handelt
+
+23
+00:01:45,000 --> 00:01:48,900
+auch dazu wird eine Funktion aus dem Modul os genutzt
+
+24
+00:01:49,000 --> 00:01:55,900
+Falls es sich um eine Datei handelt, gibt diese Funktion True zurueck, andernfalls False
+
+25
+00:01:56,000 --> 00:02:00,900
+Nur im ersten Fall ist die if-Bedingung wahr und der Zaehler wird erhoeht
+
+26
+00:02:01,000 --> 00:02:06,900
+Nach dem Durchlauf der Schleife setzt der normale Programmfluss fort
+
+27
+00:02:07,000 --> 00:02:09,900
+die letzte Zeile des Skriptes wird ausgefuehrt
+
+28
+00:02:10,000 --> 00:02:13,900
+und zeigt die Zahl der Dateien im aktuellen Verzeichnis an
+
+29
+00:02:14,000 --> 00:02:21,900
+Speichern und Ausfuehren - python modul.py
+
+30
+00:02:22,000 --> 00:02:26,900
+Es gibt 26 Dateien in diesem Verzeichnis
+
+31
+00:02:27,000 --> 00:02:30,900
+Es gibt auch eine Moeglichkeit, Funktionen aus Modulen so zu importieren
+
+32
+00:02:31,000 --> 00:02:33,900
+dass sie im Skript direkt verfuegbar sind
+
+33
+00:02:34,000 --> 00:02:38,900
+mit der Anweisung from MODUL import FUNKTION/OBJEKT
+
+34
+00:02:39,000 --> 00:02:41,900
+So koennte es im obigen Beispiel etwa heissen
+
+35
+00:02:42,000 --> 00:02:59,900
+from os import listdir - statt import os
+
+36
+00:03:00,000 --> 00:03:04,900
+Allerdings muesste dann auch Zeile 8 angepasst werden
+
+37
+00:03:05,000 --> 00:03:09,900
+Da durch den from-Import die listdir()-Funktion direkt im Namensraum
+
+38
+00:03:10,000 --> 00:03:14,900
+des Skriptes verfuegbar ist, muesste die Zeile nun wie folgt lauten
+
+39
+00:03:15,000 --> 00:03:24,900
+files = listdir(".") - ohne os.
+
+40
+00:03:25,000 --> 00:03:30,900
+Das sieht auf den ersten Blick sehr bequem aus, fuehrt aber jetzt in Zeile 10 zu Problemen
+
+41
+00:03:31,000 --> 00:03:35,900
+Da nur die Funktion listdir importiert wurde
+
+42
+00:03:36,000 --> 00:03:43,900
+ist ein Zugriff auf die Funktion os.path.isfile nicht moeglich
+
+43
+00:03:44,000 --> 00:03:48,900
+Diese Funktion muesste nun zusaetzlich importiert werden
+
+44
+00:03:49,000 --> 00:03:52,900
+Das Importieren von einzelnen Funktionen hat noch andere Nachteile
+
+45
+00:03:53,000 --> 00:03:57,900
+So erschwert es die Verstaendlichkeit des Quelltextes
+
+46
+00:03:58,000 --> 00:04:04,900
+da Fremde nicht wissen, ob mit listdir hier die Funktion aus dem os-Modul gemeint ist
+
+47
+00:04:05,000 --> 00:04:09,900
+oder vielleicht irgendwo im Quelltext noch eine eigene listdir-Funktion zu finden ist
+
+48
+00:04:10,000 --> 00:04:11,900
+die etwas ganz anderes macht
+
+49
+00:04:12,000 --> 00:04:15,900
+In aller Regel sollte daher von from-Importen abgesehen
+
+50
+00:04:16,000 --> 00:04:18,900
+und die zusaetzliche Schreibarbeit in Kauf genommen werden
+
+51
+00:04:19,000 --> 00:04:36,900
+so kommt jetzt noch from os.path import isfile hinzu
+
+52
+00:04:37,000 --> 00:04:44,900
+und in Zeile 11 kann man das os.path. loeschen
+ 
+53
+00:04:45,000 --> 00:04:49,900
+OK - Speichern und Ausfuehren
+
+54
+00:04:52,000 --> 00:04:53,900
+Tschau und viel Glueck
+
+55
+00:04:54,000 --> 00:04:54,001
+Quelle des Textes: http://www.freiesmagazin.de/freiesMagazin-2010-12 Autor: Daniel Noegel
+
+56
+00:04:54,002 --> 00:04:53,003
+Lizenz des Untertitel-Dokuments und des Textes: http://creativecommons.org/licenses/by-sa/3.0/

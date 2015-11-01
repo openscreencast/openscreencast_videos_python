@@ -1,0 +1,107 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Funktionen (Teil 3)
+
+2
+00:00:09,000 --> 00:00:15,900
+Die Zeilen wurden im Voraus gespeichert als Datei funktion.py im Persoenlichen Ordner
+
+3
+00:00:16,000 --> 00:00:18,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:19,000 --> 00:00:22,900
+Parameter an Funktionen uebergeben
+
+5
+00:00:23,000 --> 00:00:28,900
+Der Programmierer muss sich peinlich genau an die im Funktionskopf definierte Reihenfolge halten
+
+6
+00:00:29,000 --> 00:00:33,900
+Die Parameter sind also abhaengig von der Position - sie sind positional
+
+7
+00:00:34,000 --> 00:00:38,900
+Als Beispiel sei die folgende (nicht besonders schoene) Funktion gegeben
+
+8
+00:00:39,000 --> 00:00:42,900
+bei der die Argumente alle in einer bestimmten Reihenfolge angegeben werden muessen
+
+9
+00:00:43,000 --> 00:00:45,900
+siehe Zeile 4 und Zeile 5
+
+10
+00:00:46,000 --> 00:00:52,900
+Statt hier nun die erforderlichen Argumente immer in der einzig richtigen Reihenfolge anzugeben
+
+11
+00:00:53,000 --> 00:00:57,900
+gibt es noch die Moeglichkeit, die Argumente per Schluesselwort zu uebergeben
+
+12
+00:00:58,000 --> 00:01:05,900
+siehe Zeile 7 - dort wird die Funktion die in Zeile 4 und 5 definiert wurde ausgefuehrt
+
+13
+00:01:06,000 --> 00:01:14,900
+Speichern und Ausfuehren - python funktion.py
+
+14
+00:01:15,000 --> 00:01:21,900
+Diese Art des Aufrufes kann die Lesbarkeit von Quelltexten enorm erhoehen
+
+15
+00:01:22,000 --> 00:01:31,900
+siehe Zeile 9 bis Zeile 13 - dort wird die Funktion print_info definiert
+
+16
+00:01:32,000 --> 00:01:34,900
+und in Zeile 15 wird die Funktion ausgefuehrt
+
+17
+00:01:35,000 --> 00:01:41,900
+Die Funktion print_info() unterscheidet sich von print_a_lot() darin
+
+18
+00:01:42,000 --> 00:01:47,900
+dass alle Parameter bis auf name optional sind - sie muessen nicht angegeben werden
+
+19
+00:01:48,000 --> 00:01:49,900
+Wird aber ein Alter uebergeben (age)
+
+20
+00:01:50,000 --> 00:01:55,900
+wird zusaetzlich zum Namen auch das Alter ausgegeben
+
+21
+00:01:56,000 --> 00:02:14,900
+Der Aufruf ist print_info(u"Jutta", age=25) (in Zeile 15) - Speichern und Ausfuehren
+
+22
+00:02:15,000 --> 00:02:23,900
+Der erste Parameter ist positional: Hier wird der Name uebergeben
+
+23
+00:02:24,000 --> 00:02:28,900
+Da alle anderen Parameter optional sind, werden sie einfach ausgelassen
+
+24
+00:02:29,000 --> 00:02:36,900
+Lediglich der age-Parameter wird noch als Schluesselwort-Argument uebergeben
+
+25
+00:02:38,000 --> 00:02:40,900
+Tschau und viel Glueck
+
+26
+00:02:41,000 --> 00:02:41,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2010-12 - Daniel Noegel - Python-Programmierung: Teil 3 - Funktionen und Module
+
+27
+00:02:41,002 --> 00:02:40,003
+Textquelle und diese Untertitel-Dokument stehen unter der Lizenz: http://creativecommons.org/licenses/by-sa/3.0/
