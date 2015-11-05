@@ -1,0 +1,211 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Dictionaries
+
+2
+00:00:09,000 --> 00:00:14,900
+Die Zeilen wurden im Voraus gespeichert als Datei dict.py im Persoenlichen Ordner
+
+3
+00:00:15,000 --> 00:00:18,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:19,000 --> 00:00:23,900
+Sogenannte Dictionaries oder Dicts werden in anderen Sprachen
+
+5
+00:00:24,000 --> 00:00:27,900
+oft Hashes oder assoziative Arrays genannt
+
+6
+00:00:28,000 --> 00:00:31,900
+Wie auch Listen koennen Dictionaries beliebige andere Datentypen verwalten
+
+7
+00:00:32,000 --> 00:00:37,900
+Waehrend Listen aber ihre Eintraege intern mit fortlaufenden Nummern adressieren
+
+8
+00:00:38,000 --> 00:00:40,900
+koennen die Eintraege in Dictionaries mit Zeichenketten
+
+9
+00:00:41,000 --> 00:00:44,900
+beliebigen Zahlen oder anderen Datentypen adressiert werden
+
+10
+00:00:45,000 --> 00:00:48,900
+Somit besteht jedes Dictionary aus zwei wesentlichen Elementen
+
+11
+00:00:49,000 --> 00:00:50,900
+Schluesseln (keys) und Werten (values)
+
+12
+00:00:51,000 --> 00:00:55,900
+Ein leeres Dict wird in Python entweder mit der Funktion dict()
+
+13
+00:00:56,000 --> 00:00:59,900
+oder zwei geschweiften Klammern erstellt
+
+14
+00:01:00,000 --> 00:01:10,900
+persons = dict() und persons = {} sind also aequivalent
+
+15
+00:01:11,000 --> 00:01:14,900
+In folgendem Beispiel sollen nun verschiedene Personen
+
+16
+00:01:15,000 --> 00:01:18,900
+und ihr jeweiliges Alter in einer Datenstruktur gespeichert werden
+
+17
+00:01:19,000 --> 00:01:20,900
+Dies koennte wie folgt aussehen
+
+18
+00:01:21,000 --> 00:01:33,900
+persons = {u"Peter":18,u"Ilse":87,u"Juergen":33,u"Jutta":25}
+
+19
+00:01:34,000 --> 00:01:39,900
+Wie also auch Listen lassen sich Dicts initial befuellen
+
+20
+00:01:40,000 --> 00:01:46,900
+Die Namen sind in diesem Beispiel jeweils die Schluessel das Alter der dazugehoerige Wert
+
+21
+00:01:47,000 --> 00:01:50,900
+Schluessel und Wert werden durch einen Doppelpunkt getrennt
+
+22
+00:01:51,000 --> 00:01:54,900
+mehrere Schluessel/Wert-Paare durch ein Komma
+
+23
+00:01:55,000 --> 00:02:00,900
+Um das Alter von Peter aus dem Dict auszulesen, genuegt folgender Aufruf
+
+24
+00:02:01,000 --> 00:02:14,900
+print persons[u"Peter"] - Speichern und Ausfuehren - python dict.py
+
+25
+00:02:15,000 --> 00:02:20,900
+Es faellt auf: Obwohl Dicts mit geschweiften Klammern erstellt werden
+
+26
+00:02:21,000 --> 00:02:26,900
+wird - wie auch bei Listen - mit eckigen Klammern auf die Werte zugegriffen
+
+27
+00:02:27,000 --> 00:02:30,900
+Auch sonst gibt es einige Parallelen zwischen Dictionaries und Listen
+
+28
+00:02:31,000 --> 00:02:37,900
+Um beispielsweise zu ueberpruefen, ob der Eintrag Hans in einem Dict vorhanden ist
+
+29
+00:02:38,000 --> 00:02:40,900
+wird ebenfalls der Operator in genutzt
+
+30
+00:02:41,000 --> 00:02:49,900
+if u"Hans" in persons: - naechste Zeile - Einruecken - print persons[u"Hans"]
+
+31
+00:02:50,000 --> 00:03:00,900
+naechste Zeile - else: - naechste Zeile - Einruecken - print u"Der Eintrag Hans ist nicht vorhanden"
+
+32
+00:03:01,000 --> 00:03:04,900
+Speichern und Ausfuehren
+
+33
+00:03:05,000 --> 00:03:10,900
+Waehrend der in-Operator aber bei Listen das Vorhandensein des Wertes Hans abfragt
+
+34
+00:03:11,000 --> 00:03:14,900
+bezieht sich der Operator bei Dicts auf den Schluessel Hans
+
+35
+00:03:15,000 --> 00:03:22,900
+Ebenso wie bei Listen fuehrt der Zugriff auf ein nicht vorhandenes Element/Schluessel zu einem Fehler
+
+36
+00:03:23,000 --> 00:03:27,900
+In manchen Situationen ist es aber vielleicht gar nicht so wichtig
+
+37
+00:03:28,000 --> 00:03:31,900
+ob ein bestimmter Eintrag nun in einem Dict vorhanden ist oder nicht
+
+38
+00:03:32,000 --> 00:03:36,900
+Fuer solche Faelle gibt es die get()-Methode von Dicts
+
+39
+00:03:37,000 --> 00:03:45,900
+So z.B. - print persons.get(u"Hans", 15) - naechste Zeile
+
+40
+00:03:46,000 --> 00:03:55,900
+print persons.get(u"Peter", 5) - Speichern und Ausfuehren
+
+41
+00:03:56,000 --> 00:04:00,900
+Die Methode get() erwartet als ersten Parameter einen beliebigen Schluessel
+
+42
+00:04:01,000 --> 00:04:06,900
+Ist der Schluessel im Dict vorhanden, wird der dazugehoerige Wert zurueckgegeben
+
+43
+00:04:07,000 --> 00:04:14,900
+Andernfalls wird der zweite Parameter (also 15) zurueckgegeben
+
+44
+00:04:15,000 --> 00:04:20,900
+So lassen sich beispielsweise Standardwerte fuer nicht vorhandene Schluessel implementieren
+
+45
+00:04:21,000 --> 00:04:30,900
+Gut zu sehen ist, dass der Aufruf in Zeile 17 nicht 5, sondern 18 zurueck gibt
+
+46
+00:04:31,000 --> 00:04:36,900
+denn dieser Wert wurde oben dem Schluessel Peter zugewiesen
+
+47
+00:04:37,000 --> 00:04:45,900
+Der zweite Parameter der Methode get() ist optional
+
+48
+00:04:46,000 --> 00:04:50,900
+Er muss nicht angegeben werden. Wird kein zweiter Parameter angegeben
+
+49
+00:04:51,000 --> 00:04:59,900
+gibt die Methode None zurueck, wenn der gesuchte Schluessel im Dict nicht vorhanden ist
+
+50
+00:04:59,000 --> 00:05:10,900
+So z.B. Zeile 19 - print persons.get(u"Anke") - Speichern und Ausfuehren
+
+51
+00:05:11,000 --> 00:05:12,900
+Tschau und viel Glueck
+
+52
+00:05:13,000 --> 00:05:13,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2010-12 - Python-Programmierung: Teil 3 – Funktionen und Module - von Daniel Noegel - Lizenz: http://creativecommons.org/licenses/by-sa/3.0/deed.de
+
+53
+00:05:13,002 --> 00:05:13,003
+Dieses Untertitel-Dokument (.srt) steht unter der Lizenz: http://creativecommons.org/licenses/by-sa/3.0/deed.de

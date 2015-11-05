@@ -1,0 +1,83 @@
+1
+00:00:05,000 --> 00:00:11,900
+Hallo - Python-Programmierung - Dictionaries - Teil 3 - Methoden von Dictionaries
+
+2
+00:00:12,000 --> 00:00:16,900
+Die Zeilen wurden im Voraus gespeichert als Datei dict.py im Persoenlichen Ordner
+
+3
+00:00:17,000 --> 00:00:18,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:19,000 --> 00:00:24,900
+In Zeile 7 wird ein Dictionary mit Schluesseln und Werten definiert
+
+5
+00:00:25,000 --> 00:00:30,900
+Nun moechte ich noch einige zusaetzliche Methoden vorstellen
+
+6
+00:00:31,000 --> 00:00:44,900
+z.B. die Methode keys() - print namen.keys() - Speichern und Ausfuehren
+
+7
+00:00:45,000 --> 00:00:56,900
+python dict.py - mit dieser Methode werden alle Schluessel zurueckgegeben
+
+8
+00:00:57,000 --> 00:01:05,900
+dann im Prinzip das gleiche die Methode values()
+
+9
+00:01:06,000 --> 00:01:13,900
+print namen.values() - hier werden alle Werte zurueckgegeben
+
+10
+00:01:14,000 --> 00:01:27,900
+Mit der Methode items() werden Schluessel und Werte zurueckgegeben
+
+11
+00:01:30,000 --> 00:01:36,900
+Dann gibt es noch die Methode has_key()
+
+12
+00:01:37,000 --> 00:01:43,900
+da wird geprueft ob der Schluessel im Dictionary vorhanden ist oder nicht
+
+13
+00:01:44,000 --> 00:02:03,900
+so z.B. print namen.has_key(u"Klaus") - ein Schluessel der vorhanden ist
+
+14
+00:02:04,000 --> 00:02:07,900
+und so gibt es dann den Wert True der zurueckgegeben wird
+
+15
+00:02:08,000 --> 00:02:20,900
+wenn der Schluessel nicht vorhanden ist dann wird der Wert False zurueckgegeben (1 - True, 0 - False)
+
+16
+00:02:28,000 --> 00:02:35,900
+und es gibt noch die Methode copy() - so kann man ein Dictionary kopieren
+
+17
+00:02:36,000 --> 00:02:48,900
+z.B. d = namen.copy() - naechste Zeile - print d
+
+18
+00:02:49,000 --> 00:02:59,900
+mit der Methode clear() kann man den Inhalt eines Dictionary loeschen
+
+19
+00:03:00,000 --> 00:03:15,900
+z.B. d.clear() - naechste Zeile - print d
+
+20
+00:03:17,000 --> 00:03:19,900
+Tschau und viel Glueck
+
+21
+00:03:20,001 --> 00:03:20,002
+Dieses Untertitel-Dokument (.srt) steht unter der Lizenz: http://creativecommons.org/publicdomain/zero/1.0/

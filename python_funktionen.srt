@@ -1,0 +1,167 @@
+1
+00:00:05,000 --> 00:00:07,900
+Hallo - Python-Programmierung - Funktionen
+
+2
+00:00:08,000 --> 00:00:14,900
+Die Zeilen wurden im Voraus gespeichert als Datei funktion.py im Persoenlichen Ordner
+
+3
+00:00:15,000 --> 00:00:17,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:18,000 --> 00:00:22,900
+Funktionen sind ein wichtiges Strukturierungsmerkmal moderner Programmiersprachen
+
+5
+00:00:23,000 --> 00:00:27,900
+Durch sie koennen haeufig benoetigte Arbeitsschritte leicht wiederverwertet werden
+
+6
+00:00:28,000 --> 00:00:31,900
+Damit dienen sie auch der Lesbarkeit und Wartbarkeit des Quelltextes
+
+7
+00:00:32,000 --> 00:00:34,900
+Eine Funktion wird in Python wie folgt deklariert
+
+8
+00:00:35,000 --> 00:00:49,900
+Zeile 4 - def say_hallo(): - naechste Zeile - Einruecken - print u"Hallo"
+
+9
+00:00:50,000 --> 00:00:55,900
+Diese Funktion kann nun einfach mit say_hallo() aufgerufen werden
+
+10
+00:00:56,000 --> 00:01:00,900
+und wird bei jedem Aufruf die Meldung Hallo auf dem Bildschirm ausgeben
+
+11
+00:01:01,000 --> 00:01:16,900
+say_hallo() - Speichern und Ausfuehren - python funktion.py
+
+12
+00:01:18,000 --> 00:01:23,900
+Das Schluesselwort def leitet hierbei die Deklaration einer Funktion ein
+
+13
+00:01:24,000 --> 00:01:26,900
+danach folgt der Name der Funktion
+
+14
+00:01:27,000 --> 00:01:32,900
+der nach dem Paar runden Klammern mit einem Doppelpunkt abgeschlossen wird
+
+15
+00:01:33,000 --> 00:01:38,900
+Zu beachten ist, dass der Rumpf von Funktionen einzuruecken ist
+
+16
+00:01:39,000 --> 00:01:41,900
+wie bei allen Kontrollstrukturen in Python
+
+17
+00:01:42,000 --> 00:01:47,900
+Natuerlich handelt es sich bei dem Beispiel noch um eine sehr einfache Funktion
+
+18
+00:01:48,000 --> 00:01:55,900
+Ein weiteres Beispiel von Zeile 7 bis Zeile 11
+
+19
+00:01:56,000 --> 00:01:59,900
+In Zeile 7 wird, wie gehabt, eine Funktion definiert
+
+20
+00:02:00,000 --> 00:02:06,900
+Sie hat den namen boxify und erwartet genau einen Parameter (hier: text)
+
+21
+00:02:07,000 --> 00:02:12,900
+Es koennen prinzipiell natuerlich beliebig viele Parameter
+
+22
+00:02:13,000 --> 00:02:17,900
+im Funktionskopf definiert werden, getrennt werden sie durch ein Komma
+
+23
+00:02:18,000 --> 00:02:24,900
+In Zeile 8 wird links und rechts der uebergebenen Zeichenkette text
+
+24
+00:02:25,000 --> 00:02:27,900
+ein Gleichheits- und Leerzeichen eingefuegt
+
+25
+00:02:28,000 --> 00:02:35,900
+in Zeile 9 wird eine Zeichenkette erstellt, die ausschliesslich Gleichheitszeichen enthaelt
+
+26
+00:02:36,000 --> 00:02:42,900
+Zeile 10 wirkt nur auf den ersten Blick kompliziert
+
+27
+00:02:43,000 --> 00:02:50,900
+Bei der Zeichenfolge \n handelt es sich um eine sogenannte Escape-Sequenz
+
+28
+00:02:51,000 --> 00:02:53,900
+die einen Zeilenumbruch erzeugt
+
+29
+00:02:54,000 --> 00:02:59,900
+Somit beinhaltet die Zeichenkette output drei Zeilen
+
+30
+00:03:00,000 --> 00:03:02,900
+Die erste Zeile enthaelt ausschliesslich Gleichheitszeichen
+
+31
+00:03:03,000 --> 00:03:09,900
+die zweite Zeile die uebergebene Zeichenkette mit Gleichheitszeichen links und rechts
+
+32
+00:03:10,000 --> 00:03:14,900
+die dritte Zeile schliesslich erneut nur Gleichheitszeichen
+
+33
+00:03:15,000 --> 00:03:26,900
+Neu ist das Schluesselwort return, es gibt den nachfolgenden Ausdruck (hier: output) zurueck
+
+34
+00:03:27,000 --> 00:03:33,900
+Wird diese Funktion nun aufgerufen, geschieht zunaechst scheinbar nichts
+
+35
+00:03:34,000 --> 00:03:53,900
+boxify("Mein Haus") - Speichern und Ausfuehren
+
+36
+00:03:54,000 --> 00:03:59,900
+Die Funktion boxify() macht keine Bildschirmausgaben
+
+37
+00:04:00,000 --> 00:04:02,900
+sondern gibt nur eine Zeichenkette zurueck
+
+38
+00:04:03,000 --> 00:04:08,900
+Diese muss also noch an die print()-Funktion weitergegeben werden
+
+39
+00:04:09,000 --> 00:04:39,900
+print boxify("Mein Haus, mein Garten, meine Box") - Speichern und Ausfuehren
+
+40
+00:04:42,000 --> 00:04:45,900
+Tschau und viel Glueck
+
+41
+00:04:46,000 --> 00:04:46,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2010-12 - Daniel Noegel - Python-Programmierung: Teil 3 - Funktionen und Module
+
+42
+00:04:46,002 --> 00:04:46,003
+Textquelle und diese Untertitel-Dokument stehen unter der Lizenz: http://creativecommons.org/licenses/by-sa/3.0/

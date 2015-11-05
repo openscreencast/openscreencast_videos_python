@@ -1,0 +1,59 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - In diesem Screencast ein kleiner Tipp
+
+2
+00:00:09,000 --> 00:00:13,900
+Wie kann man mit python und opencv ein Bild in ein anderes Format umwandeln
+
+3
+00:00:14,000 --> 00:00:17,900
+Als erstes wird zusaetzlich das Paket python-opencv installiert
+
+4
+00:00:18,000 --> 00:00:29,900
+per Befehl sudo apt-get install python-opencv ENTER - Passwort eingeben
+
+5
+00:00:30,000 --> 00:00:34,900
+und warten bis das Paket heruntergeladen wurde und installiert ist
+
+6
+00:00:35,000 --> 00:00:41,900
+Uebrigens habe ich schon ein Bild von openclipart.org heruntergeladen
+
+7
+00:00:42,000 --> 00:00:54,900
+das sieht so aus - Bildbetrachter - eog kaffee.png
+
+8
+00:00:56,000 --> 00:01:02,900
+und so sieht das Skript aus - in Zeile 4 wird das Modul importiert
+
+9
+00:01:03,000 --> 00:01:10,900
+Das Modul fuer opencv - in Zeile 6 wird das Bild kaffee.png geladen
+
+10
+00:01:11,000 --> 00:01:15,900
+und in Zeile 7 wird das Bild in einem anderen Format gespeichert
+
+11
+00:01:16,000 --> 00:01:28,900
+ganz simpel - Speichern und Ausfuehren - python convert.py ENTER
+
+12
+00:01:29,000 --> 00:01:36,900
+Jetzt muesste das Bild eigentlich vorhanden sein - in dem anderen Format
+
+13
+00:01:37,000 --> 00:01:45,900
+wieder Bildbetrachter - eog kaffee.jpg ENTER
+
+14
+00:01:49,000 --> 00:01:52,900
+Tschau und viel Glueck
+
+15
+00:01:53,000 --> 00:01:53,001
+Dieses Untertitel-Dokument (.srt) steht unter der Lizenz: http://creativecommons.org/publicdomain/zero/1.0/

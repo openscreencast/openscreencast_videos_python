@@ -1,0 +1,187 @@
+1
+00:00:05,000 --> 00:00:09,900
+Hallo - Python-Programmierung - Funktionen (Teil 2)
+
+2
+00:00:10,000 --> 00:00:14,900
+Die Zeilen wurden im Voraus gespeichert als Datei funktion.py im Persoenlichen Ordner
+
+3
+00:00:15,000 --> 00:00:16,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:17,000 --> 00:00:21,900
+Eine Besonderheit ist bei return noch zu beachten
+
+5
+00:00:22,000 --> 00:00:25,900
+Die Anweisung bricht die Funktion sofort ab und liefert einen Rueckgabewert
+
+6
+00:00:26,000 --> 00:00:30,900
+nachfolgende Codezeilen der Funktion werden nicht mehr ausgefuehrt
+
+7
+00:00:31,000 --> 00:00:36,900
+von Zeile 4 bis Zeile 7 wird eine Funktion definiert namens test
+
+8
+00:00:37,000 --> 00:00:40,900
+in der Zeile 9 gibt es eine Ausgabe mit dem Wert start
+
+9
+00:00:41,000 --> 00:00:46,900
+ebenfalls in Zeile 11 gibt es auch eine Ausgabe mit dem Wert ende
+
+10
+00:00:47,000 --> 00:00:50,900
+und in Zeile 10 wird die Funktion test ausgefuehrt
+
+11
+00:00:51,000 --> 00:00:57,900
+Speichern und Ausfuehren - python funktion.py
+
+12
+00:00:58,000 --> 00:01:06,900
+Dieses Beispiel gibt nun die folgende Meldung aus start Hallo! ende
+
+13
+00:01:07,000 --> 00:01:12,900
+Die Zeile 7 (Dies ist ein Test) kommt niemals zur Ausfuehrung
+
+14
+00:01:13,000 --> 00:01:16,900
+Gut zu sehen ist auch, in welcher Reihenfolge die Anweisungen ausgefuehrt werden
+
+15
+00:01:17,000 --> 00:01:22,900
+Zwar wird in den Zeilen 4 bis 7 die Funktion definiert
+
+16
+00:01:23,000 --> 00:01:25,900
+sie wird aber noch nicht ausgefuehrt
+
+17
+00:01:26,000 --> 00:01:30,900
+Es muss also immer zwischen der Deklaration einer Funktion und 
+
+18
+00:01:31,000 --> 00:01:35,900
+dem Aufruf derselben unterschieden werden
+
+19
+00:01:36,000 --> 00:01:39,900
+Zuerst wird hier demnach die Meldung start ausgegeben
+
+20
+00:01:40,000 --> 00:01:47,900
+Dann wird die Funktion aufgerufen und abgearbeitet - die Meldung Hallo! erscheint
+
+21
+00:01:48,000 --> 00:01:53,900
+Durch die Anweisung return wird der Programmfluss nun in Zeile 11 fortgesetzt
+
+22
+00:01:54,000 --> 00:01:56,900
+ende wird ausgegeben
+
+23
+00:01:57,000 --> 00:02:02,900
+Zu beachten ist, dass Funktionen keine return-Anweisung haben muessen
+
+24
+00:02:03,000 --> 00:02:07,900
+haben sie keine, kehrt der Programmfluss nach dem Abarbeiten
+
+25
+00:02:08,000 --> 00:02:11,900
+des Funktionsrumpfes zum Ausgangspunkt zurueck
+
+26
+00:02:12,000 --> 00:02:14,900
+Der Rueckgabewert der Funktion ist dann None
+
+27
+00:02:15,000 --> 00:02:19,900
+Eine weiteres wichtiges Element von Funktionen sind Standardparameter
+
+28
+00:02:20,000 --> 00:02:23,900
+Sie werden durch ein Gleichheitszeichen definiert
+
+29
+00:02:24,000 --> 00:02:33,900
+so in Zeile 13 und 14 - hier wird eine Funktion namens say_something definiert
+
+30
+00:02:34,000 --> 00:02:48,900
+mit dem Parameter what und einem zweiten Parameter mit einem Standardwert
+
+31
+00:02:49,000 --> 00:02:52,900
+Der Parameter what ist obligatorisch
+
+32
+00:02:53,000 --> 00:02:58,900
+bei jedem Funktionsaufruf muss er angegeben werden, sonst kommt es zu einem Fehler
+
+33
+00:02:59,000 --> 00:03:02,900
+Der zweite Parameter hingegen ist optional
+
+34
+00:03:03,000 --> 00:03:07,900
+Wird er nicht angegeben, erhaelt er automatisch den Wert Karl
+
+35
+00:03:08,000 --> 00:03:21,900
+Entsprechend gibt obiges Skript (Zeile 13 bis Zeile 17) folgendes zurueck
+
+36
+00:03:22,000 --> 00:03:25,900
+Speichern und Ausfuehren
+
+37
+00:03:26,000 --> 00:03:29,900
+Wichtig ist: Bei der Funktionsdefinition
+
+38
+00:03:30,000 --> 00:03:33,900
+muessen zuerst immer die obligatorischen Parameter angegeben werden
+
+39
+00:03:34,000 --> 00:03:36,900
+sonst kommt es zu einem Fehler
+
+40
+00:03:34,000 --> 00:03:42,900
+in Zeile 16 und 17 gibt es einen Aufruf der Funktion
+
+41
+00:03:43,000 --> 00:03:49,900
+einmal mit dem Wert u"Hi" - so kommt es auch zur Ausgabe Karl sagt: Hi
+
+42
+00:03:50,000 --> 00:03:57,900
+und in Zeile 17 mit dem Wert u"Tach auch" als Parameter what
+
+43
+00:03:58,000 --> 00:04:02,900
+und der zweite Parameter ist u"Bernd"
+
+44
+00:04:03,000 --> 00:04:07,900
+also nicht mehr Karl - und so kommt es zur Ausgabe Bernd sagt: Tach auch
+
+45
+00:04:10,000 --> 00:04:12,900
+Tschau und viel Glueck
+
+46
+00:04:13,000 --> 00:04:13,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2010-12 - Daniel Noegel - Python-Programmierung: Teil 3 - Funktionen und Module
+
+47
+00:04:13,002 --> 00:04:13,003
+Textquelle und diese Untertitel-Dokument stehen unter der Lizenz: http://creativecommons.org/licenses/by-sa/3.0/

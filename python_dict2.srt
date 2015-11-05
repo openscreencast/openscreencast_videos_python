@@ -1,0 +1,135 @@
+1
+00:00:05,000 --> 00:00:09,900
+Hallo - Python-Programmierung - Dictionaries - Teil 2
+
+2
+00:00:10,000 --> 00:00:16,900
+Die Zeilen wurden im Voraus gespeichert als Datei dict.py im Persoenlichen Ordner
+
+3
+00:00:17,000 --> 00:00:18,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:19,000 --> 00:00:23,900
+Natuerlich koennen auch jederzeit weitere Eintraege zu Dicts hinzugefuegt
+
+5
+00:00:24,000 --> 00:00:26,900
+oder bestehende Eintraege veraendert werden
+
+6
+00:00:28,000 --> 00:00:35,900
+In Zeile 9 wird das Alter von Peter auf 99 veraendert
+
+7
+00:00:36,000 --> 00:00:38,900
+In Zeile 11 wird der Eintrag Hans hinzugefuegt
+
+8
+00:00:39,000 --> 00:00:45,900
+Speichern und Ausfuehren - python dict.py
+
+9
+00:00:46,000 --> 00:00:52,900
+Dictionaries lassen sich - ebenso wie Listen - auch sehr leicht verschachteln
+
+10
+00:00:53,000 --> 00:00:56,900
+In folgendem Beispiel wird ein verschachteltes Dict genutzt
+
+11
+00:00:57,000 --> 00:01:00,900
+um ein kleines Adressbuch zu implementieren
+
+12
+00:01:01,000 --> 00:01:04,900
+Siehe Zeile 14 bis Zeile 17
+
+13
+00:01:05,000 --> 00:01:12,900
+Hier wird - zur besseren Lesbarkeit ueber mehrere Zeilen verteilt - ein verschachteltes Dict erstellt
+
+14
+00:01:13,000 --> 00:01:20,900
+In Zeile 14 wird dem Namen addresses ein Dict zugewiesen
+
+15
+00:01:21,000 --> 00:01:23,900
+Dieses wird dabei direkt initial befuellt
+
+16
+00:01:24,000 --> 00:01:29,900
+Den Schluesseln Peter und Jutta wird dabei nicht wie oben ihr Alter als Wert zugeteilt
+
+17
+00:01:30,000 --> 00:01:34,900
+sondern es dienen Dicts als Werte
+
+18
+00:01:35,000 --> 00:01:48,900
+Der Aufruf in Zeile 19 - print addresses[u"Peter"] gibt nun das dazugehoerige Dict zurueck
+
+19
+00:01:52,000 --> 00:01:55,900
+Auf dieses Dict kann auch direkt zugegriffen werden
+
+20
+00:01:56,000 --> 00:02:01,900
+siehe Zeile 21 - print addresses[u"Peter"][u"street"]
+
+21
+00:02:03,000 --> 00:02:05,900
+Dieser Aufruf irritiert vielleicht zunaechst
+
+22
+00:02:06,000 --> 00:02:10,900
+Etwas verstaendlicher (aber laenger) ist folgende Vorgehensweise
+
+23
+00:02:11,000 --> 00:02:16,900
+siehe Zeile 23 bis Zeile 25
+
+24
+00:02:17,000 --> 00:02:25,900
+In Zeile 23 wird der zum Schluessel Peter gehoerige Wert der Variable peters_data zugewiesen
+
+25
+00:02:26,000 --> 00:02:32,900
+Dieser Wert ist wiederum ein Dict mit den zu Peter gehoerigen Adressdaten
+
+26
+00:02:33,000 --> 00:02:36,900
+die Variable peters_data ist ein Dict
+
+27
+00:02:37,000 --> 00:02:48,900
+In Zeile 25 wird nun wiederum der Schluessel street dieses zweiten Dicts ausgegeben
+
+28
+00:02:51,000 --> 00:02:54,900
+Insgesamt eignen sich Dicts hervorragend
+
+29
+00:02:55,000 --> 00:03:00,900
+um Datenstrukturen wie Woerterbuecher oder Adressbuecher abzubilden
+
+30
+00:03:01,000 --> 00:03:05,900
+ueberall dort wo Informationen ueber bestimmte Schluessel zugaenglich sein sollen
+
+31
+00:03:06,000 --> 00:03:09,900
+empfiehlt sich die Verwendung von Dictionaries
+
+32
+00:03:11,000 --> 00:03:13,900
+Tschau und viel Glueck
+
+33
+00:03:14,000 --> 00:03:14,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2010-12 - Python-Programmierung: Teil 3 – Funktionen und Module - von Daniel Noegel - Lizenz: http://creativecommons.org/licenses/by-sa/3.0/deed.de
+
+34
+00:03:14,002 --> 00:03:14,003
+Dieses Untertitel-Dokument (.srt) steht unter der Lizenz: http://creativecommons.org/licenses/by-sa/3.0/deed.de
