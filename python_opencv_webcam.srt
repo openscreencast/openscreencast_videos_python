@@ -1,0 +1,123 @@
+1
+00:00:05,000 --> 00:00:09,900
+Webcambilder mit Python und OpenCV am Bildschirm anzeigen
+
+2
+00:00:10,000 --> 00:00:17,900
+Die Zeilen wurden im Voraus gespeichert als Datei webcam.py im Persoenlichen Ordner
+
+3
+00:00:18,000 --> 00:00:20,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:21,000 --> 00:00:26,900
+Mit Python Webcambilder einlesen und bearbeiten das ist einfacher als man denkt
+
+5
+00:00:27,000 --> 00:00:30,900
+Hier soll gezeigt werden, wie man ein Livebild am Bildschirm ausgibt
+
+6
+00:00:31,000 --> 00:00:34,900
+Genutzt wird eine Programmbibliothek mit der man viel mehr tun kann
+
+7
+00:00:35,000 --> 00:00:37,900
+als nur Webcambilder aufzeichnen: OpenCV
+
+8
+00:00:38,000 --> 00:00:44,900
+OpenCV (Open Source Computer Vision) ist eine von Intel ins Leben gerufene Programmbibliothek
+
+9
+00:00:45,000 --> 00:00:50,900
+die Funktionen zum Einlesen von Kamerabildern fuer die Livebild-Manipulation
+
+10
+00:00:51,000 --> 00:00:55,900
+sowie fuer Objekterkennung und Objektverfolgung enthaelt
+
+11
+00:00:56,000 --> 00:00:59,900
+ueber 2000 verschiedene, optimierte Algorithmen sind inzwischen verfuegbar
+
+12
+00:01:00,000 --> 00:01:07,900
+Zunaechst muss man das Paket opencv-python ueber die Paketverwaltung installieren
+
+13
+00:01:08,000 --> 00:01:20,900
+Bei Fedora geht das per Befehl su -c "yum install opencv-python" ENTER - Passwort eingeben
+
+14
+00:01:21,000 --> 00:01:32,900
+oder man benutzt das Programm gpk-application
+
+15
+00:01:36,000 --> 00:01:38,900
+Das folgende kleine Programm oeffnet ein Fenster am Bildschirm
+
+16
+00:01:39,000 --> 00:01:41,900
+und gibt das aktuelle Livebild aus
+
+17
+00:01:42,000 --> 00:01:46,900
+Durch Druecken der Taste Q wird das Programm wieder beendet
+
+18
+00:01:47,000 --> 00:01:56,900
+Das Programm beginnt mit dem Import des OpenCV-Moduls in der Zeile import cv (Zeile 7)
+
+19
+00:01:57,000 --> 00:02:12,900
+Danach erfolgt die Initialisierung der Webcam mit cam = cv.CaptureFromCAM(KAMERA_NR) (Zeile 11)
+
+20
+00:02:13,000 --> 00:02:21,900
+Vorher wird die Variable KAMERA_NR mit dem Wert 0 definiert
+
+21
+00:02:22,000 --> 00:02:29,900
+Danach gibt es eine Variable namens taste mit dem Wert 0
+
+22
+00:02:30,000 --> 00:02:34,900
+Als naechstes kommt eine Schleife, die solange durchlaufen wird
+
+23
+00:02:35,000 --> 00:02:41,900
+bis die Variable taste den Code des Zeichens q enthaelt
+
+24
+00:02:42,000 --> 00:02:57,900
+Mit bild = cv.QueryFrame(cam) holt man den aktuellen Frame (das aktuelle Bild)
+
+25
+00:02:58,000 --> 00:03:11,900
+aus dem Videostream und mit cv.ShowImage("Livebild", bild)
+
+26
+00:03:12,000 --> 00:03:15,900
+gibt man dieses Bild in einem eigenen Fenster aus
+
+27
+00:03:16,000 --> 00:03:30,900
+Mit taste = cv.WaitKey(2) % 256 wird zwei Millisekunden gewartet
+
+28
+00:03:31,000 --> 00:03:38,900
+und dann das untere Byte des zurueckgegebenen Codes an die Variable taste uebergeben
+
+29
+00:03:39,000 --> 00:03:41,900
+Die zwei Millisekunden Wartezeit sind notwendig
+
+30
+00:03:42,000 --> 00:03:46,900
+um eine Aktualisierung der Bildschirmausgabe zu ermoeglichen
+
+31
+00:03:47,000 --> 00:03:57,900
+Gestartet wird das Programm mit python webcam.py

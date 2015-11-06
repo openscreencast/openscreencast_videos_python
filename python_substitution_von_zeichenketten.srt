@@ -1,0 +1,151 @@
+1
+00:00:05,000 --> 00:00:10,900
+Hallo - Python-Programmierung - Substitution von Zeichenketten
+
+2
+00:00:11,000 --> 00:00:16,900
+Die Zeilen wurden im Voraus gespeichert als Datei sub.py im Persoenlichen Ordner
+
+3
+00:00:17,000 --> 00:00:19,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:20,000 --> 00:00:24,900
+In der Regel moechte man aber nicht nur blosse Zeichenketten ausgeben
+
+5
+00:00:25,000 --> 00:00:29,900
+sondern bestimmte dynamische Informationen darin transportieren - etwa den Namen des Benutzers
+
+6
+00:00:30,000 --> 00:00:35,900
+Dies funktioniert in Python so, dass man zunaechst Platzhalter in der Zeichenkette definiert
+
+7
+00:00:36,000 --> 00:00:41,900
+und diese spaeter mit der format()-Methode gegen den gewuenschten Inhalt austauscht
+
+8
+00:00:42,000 --> 00:01:04,900
+Zeile 4 - message = u"Hallo {0}, du hast {1} Euro im Portemonnaie.".format(u"Karl", 10)
+
+9
+00:01:05,000 --> 00:01:14,900
+naechste Zeile - print message - Speichern und Ausfuehren - python sub.py
+
+10
+00:01:16,000 --> 00:01:25,900
+Die Methode format() ersetzt also die Zeichenfolge {0} innerhalb der Zeichenkette
+
+11
+00:01:26,000 --> 00:01:32,900
+durch den ersten Parameter Karl, die Zeichenfolge {1} durch den zweiten Parameter 10 usw.
+
+12
+00:01:33,000 --> 00:01:37,900
+Python kuemmert sich dabei automatisch um das Umwandeln der Datentypen
+
+13
+00:01:38,000 --> 00:01:41,900
+so koennen sehr leicht auch Zahlen in Zeichenketten eingefuegt werden
+
+14
+00:01:42,000 --> 00:01:45,900
+ohne dass sich der Benutzer um irgendwelche Umwandlungen zu kuemmern haette
+
+15
+00:01:46,000 --> 00:01:50,900
+Folgendes Beispiel dient zur Veranschaulichung
+
+16
+00:01:51,000 --> 00:01:58,900
+Zeile 7 - eine Liste - names = [u"Karl", u"Bernd", u"Hannes", u"Ina" ]
+
+17
+00:01:59,000 --> 00:02:02,900
+naechste Zeile - for name in names:
+
+18
+00:02:03,000 --> 00:02:28,900
+naechste Zeile - Einruecken - print u"'{0}' hat {1} Buchstaben".format(name, len(name))
+
+19
+00:02:29,000 --> 00:02:34,900
+Speichern und Ausfuehren - Die Ausgabe lautet - 'Karl' hat 4 Buchstaben
+
+20
+00:02:35,000 --> 00:02:40,900
+'Bernd' hat 5 Buchstaben - 'Hannes' hat 6 Buchstaben - 'Ina' hat 3 Buchstaben
+
+21
+00:02:41,000 --> 00:02:44,900
+Bisher wurden nur positionale Argumente verwendet
+
+22
+00:02:45,000 --> 00:02:54,900
+das heisst: {0} verweist jeweils auf den ersten Parameter von format(), {1} auf den zweiten etc.
+
+23
+00:02:55,000 --> 00:02:59,900
+Um die uebersicht zu wahren, ist auch die Angabe von Namen moeglich
+
+24
+00:03:00,000 --> 00:03:04,900
+format() erlaubt dabei eine sehr weitreichende Formatierung - als Beispiel
+
+25
+00:03:05,000 --> 00:03:12,900
+Zeile 11 und Zeile 12 - Speichern und Ausfuehren
+
+26
+00:03:13,000 --> 00:03:18,900
+So laesst sich etwa festlegen, wie viele Nachkommastellen ausgegeben werden sollen
+
+27
+00:03:19,000 --> 00:03:25,900
+ob und wie viele Leerzeichen der Zeichenkette vorangestellt werden sollen und vieles mehr
+
+28
+00:03:26,000 --> 00:03:30,900
+Achtung: In Zeichenketten, die mit format() formatiert werden
+
+29
+00:03:31,000 --> 00:03:37,900
+werden alle geschweiften Klammern als Ersetzungszeichen interpretiert
+
+30
+00:03:38,000 --> 00:03:41,900
+Folgende Zeile wird also zu einem Fehler fuehren
+
+31
+00:03:42,000 --> 00:03:49,900
+Zeile 14 - Speichern und Ausfuehren
+
+32
+00:03:50,000 --> 00:03:54,900
+Hier muessen die letzten beiden Klammern maskiert werden
+
+33
+00:03:55,000 --> 00:04:02,900
+print u"{0} mag Klammern wie {{ oder }}".format(u"Bernd") - 2 geschweifte Klammern hinzu
+
+34
+00:04:03,000 --> 00:04:06,900
+Speichern und Ausfuehren
+
+35
+00:04:07,000 --> 00:04:12,900
+Doppelte geschweifte Klammern werden also von der format()-Methode ignoriert
+
+36
+00:04:15,000 --> 00:04:17,900
+Tschau und viel Glueck
+
+37
+00:04:18,000 --> 00:04:18,001
+Textquelle: http://www.freiesmagazin.de/freiesMagazin-2010-12, Autor: Daniel Nögel, Lizenz: http://creativecommons.org/licenses/by-sa/3.0/deed.de
+
+38
+00:04:18,002 --> 00:04:18,003
+Dieses Untertitel-Dokument steht unter der Lizenz: http://creativecommons.org/licenses/by-sa/3.0/

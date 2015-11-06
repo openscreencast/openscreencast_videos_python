@@ -1,0 +1,91 @@
+1
+00:00:05,000 --> 00:00:09,900
+Hallo - Python-Programmierung - Listen durch Slices veraendern
+
+2
+00:00:10,000 --> 00:00:17,900
+Die Zeilen wurden im Voraus gespeichert als Datei listen.py im Ordner Arbeitsflaeche
+
+3
+00:00:18,000 --> 00:00:21,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:22,000 --> 00:00:29,900
+Bisher wurde nur lesend auf einen Listen-Index zugegriffen
+
+5
+00:00:30,000 --> 00:00:34,900
+Die Ursprungsliste wurde dabei jedoch nie veraendert
+
+6
+00:00:35,000 --> 00:00:40,900
+Mit dem Zuweisungsoperator laesst sich aber auch ein Index ueberschreiben
+
+7
+00:00:41,000 --> 00:00:42,900
+oder ganze Bereiche einfuegen
+
+8
+00:00:43,000 --> 00:00:53,900
+letters = [u"a", u"b", u"c"] - naechste Zeile - print letters
+
+9
+00:00:54,000 --> 00:01:00,900
+Speichern und Ausfuehren - python listen.py
+
+10
+00:01:01,000 --> 00:01:04,900
+Hier wird zunaechst eine Liste mit den Buchstaben a bis c erstellt
+
+11
+00:01:05,000 --> 00:01:23,900
+naechste Zeile - letters[2] = u"e"
+
+12
+00:01:24,000 --> 00:01:31,900
+naechste Zeile - print letters - Speichern und Ausfuehren
+
+13
+00:01:32,000 --> 00:01:39,900
+Der dritte Eintrag der Liste, wird in Zeile 6 durch e ersetzt
+
+14
+00:01:40,000 --> 00:01:43,900
+die Liste letters wurde dadurch veraendert
+
+14
+00:01:44,000 --> 00:02:10,900
+naechste Zeile - letters[2:2] = [u"c", u"d"]
+
+15
+00:02:11,000 --> 00:02:20,900
+naechste Zeile - print letters - Speichern und Ausfuehren
+
+16
+00:02:21,000 --> 00:02:27,900
+In Zeile 8 werden zwischen b und e zwei weitere Listenelemente eingefuegt
+
+17
+00:02:28,000 --> 00:02:38,900
+Durch den Slice [2:2] wird der Schnitt direkt vor dem dritten Listenelement gesetzt (Index 2)
+
+18
+00:02:39,000 --> 00:02:40,900
+so dass die Buchstabenreihenfolge wieder stimmt
+
+19
+00:02:41,000 --> 00:02:59,900
+naechste Zeile - letters[3:] = [1, 2, 3]
+
+20
+00:03:00,000 --> 00:03:08,900
+naechste Zeile - print letters - Speichern und Ausfuehren
+
+21
+00:03:09,000 --> 00:03:17,900
+In Zeile 10 ist schliesslich zu sehen, wie ein ganzer Slice der Liste ueberschrieben wird
+
+22
+00:03:20,000 --> 00:03:22,900
+Tschau und viel Glueck

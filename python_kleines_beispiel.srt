@@ -1,0 +1,111 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Ein kleines Beispiel
+
+2
+00:00:09,000 --> 00:00:14,900
+Die Zeilen wurden im Voraus gespeichert als Datei beispiel.py im Persoenlichen Ordner
+
+3
+00:00:15,000 --> 00:00:16,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:17,000 --> 00:00:21,900
+Das folgende Beispiel setzt einige der erlernten Techniken ein
+
+5
+00:00:22,000 --> 00:00:31,900
+Hinweis: Benutzer von Python 3.0 verwenden anstatt raw_input() schlicht input()
+
+6
+00:00:32,000 --> 00:00:38,900
+In den Zeilen 7 und 8 werden zwei Listen definiert
+
+7
+00:00:39,000 --> 00:00:43,900
+users beinhaltet die verschiedenen Benutzer, passwords deren Passworte
+
+8
+00:00:44,000 --> 00:00:45,900
+Dabei gehoeren immer die Listeneintraege
+
+9
+00:00:46,000 --> 00:00:51,900
+mit dem selben Index-Wert zusammen (also Karl und karl123 etc.)
+
+10
+00:00:52,000 --> 00:00:58,900
+Die Schleife in diesem Beispiel wird hoechstens fuenfmal ausgefuehrt
+
+11
+00:00:59,000 --> 00:01:04,900
+nach fuenf Durchlaeufen hat counter den Wert 6
+
+12
+00:01:05,000 --> 00:01:11,900
+so dass die Bedingung der while-Schleife nicht mehr wahr ist
+
+13
+00:01:12,000 --> 00:01:21,900
+In Zeile 14 wird geprueft, ob der Benutzername nicht in der Liste vorkommt
+
+14
+00:01:22,000 --> 00:01:28,900
+in diesem Fall wird die Fehlermeldung in Zeile 15 ausgegeben
+
+15
+00:01:29,000 --> 00:01:34,900
+und der Zaehler in Zeile 24 um 1 erhoeht
+
+16
+00:01:35,000 --> 00:01:43,900
+Anderenfalls (ab Zeile 16) wird zunaechst mit der Methode index()
+
+17
+00:01:44,000 --> 00:01:49,900
+die Position des Benutzernamens in der Liste users ermittelt
+
+18
+00:01:44,000 --> 00:01:57,900
+In Zeile 18 wird das dazugehoerige Passwort mit dem
+
+19
+00:01:58,000 --> 00:02:00,900
+vom Benutzer eingegebenen Passwort verglichen
+
+20
+00:02:01,000 --> 00:02:06,900
+Stimmen beide ueberein, wird in Zeile 19 eine Meldung ausgegeben
+
+21
+00:02:07,000 --> 00:02:13,900
+und die Schleife in Zeile 20 mit dem neuen Schluesselwort break abgebrochen
+
+22
+00:02:14,000 --> 00:02:23,900 
+Speichern und Ausfuehren - python beispiel.py
+
+23
+00:02:24,000 --> 00:02:32,900 
+Benutzername Karl - Passwort karl123
+
+24
+00:02:33,000 --> 00:02:45,900
+oder ein falscher Benutzername z.B. Paul - Passwort 123
+
+25
+00:02:46,000 --> 00:02:49,900
+Dieser Benutzer existiert nicht
+
+26
+00:02:50,000 --> 00:02:58,900
+und nochmal mit Karl und ein falsches Passwort - 123
+
+27
+00:02:59,000 --> 00:03:01,900
+Sie haben ein falsches Passwort eingegeben
+
+28
+00:03:04,000 --> 00:03:06,900
+OK - Tschau und viel Glueck
