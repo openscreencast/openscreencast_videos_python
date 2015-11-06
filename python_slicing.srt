@@ -1,0 +1,95 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Slicing
+
+2
+00:00:09,000 --> 00:00:13,900
+Die Zeilen wurden im Voraus gespeichert als Datei listen.py im Ordner Arbeitsflaeche
+
+3
+00:00:14,000 --> 00:00:17,900
+und die Datei wurd als ausfuehrbar markiert
+
+4
+00:00:18,000 --> 00:00:24,900
+Hier mal die Liste letters mit den Eintraegen a b c d e
+
+5
+00:00:25,000 --> 00:00:35,900
+Ausgabe der Liste - Speichern und Ausfuehren - python listen.py ENTER
+
+6
+00:00:36,000 --> 00:00:39,900
+Sehr wichtig fuer Listen ist auch das Slicing also das Zerschneiden
+
+7
+00:00:40,000 --> 00:00:42,900
+Mit dem slicing-Operator koennen einzelne Elemente
+
+8
+00:00:43,000 --> 00:00:45,900
+oder Ausschnitte von Listen ausgelesen werden
+
+9
+00:00:46,000 --> 00:00:56,900
+Der Operator sieht dabei wie folgt aus [von:bis]
+
+10
+00:00:57,000 --> 00:01:00,900
+von steht dabei fuer den Eintrag der Liste bei dem das Zerschneiden beginnen soll
+
+11
+00:01:01,000 --> 00:01:04,900
+es wird von 0 gezaehlt
+
+12
+00:01:05,000 --> 00:01:08,900
+bis steht fuer den Listeneintrag, vor dem das Zerschneiden endet
+
+13
+00:01:09,000 --> 00:01:25,900
+Als Beispiel print letters[0:3] - Speichern und Ausfuehren
+
+14
+00:01:26,000 --> 00:01:30,900
+Hier ist die Ausgabe a b c
+
+15
+00:01:31,000 --> 00:01:44,900
+naechstes Beispiel - print letters[2:5] - Speichern und Ausfuehren
+
+16
+00:01:45,000 --> 00:01:49,900
+Hier ist die Ausgabe c d e
+
+17
+00:01:50,000 --> 00:01:52,900
+Es ist auch moeglich, das Ende des Schnittes
+
+18
+00:01:53,000 --> 00:01:55,900
+vom Ende der Liste aus zu definieren
+
+19
+00:01:56,000 --> 00:01:59,900
+indem ein negatives Vorzeichen gewaehlt wird
+
+20
+00:02:00,000 --> 00:02:15,900
+Beispiel print letters[0:-1] - Speichern und Ausfuehren
+
+21
+00:02:16,000 --> 00:02:18,900
+Die Ausgabe ist hier a b c d
+
+22
+00:02:20,000 --> 00:02:35,900
+naechstes Beispiel - print letters[0:-2] - Speichern und Ausfuehren
+
+23
+00:02:36,000 --> 00:02:54,900
+naechstes Beispiel - print letters[1:-2] - Speichern und Ausfuehren
+
+24
+00:02:56,000 --> 00:02:58,900
+Tschau und viel Glueck
