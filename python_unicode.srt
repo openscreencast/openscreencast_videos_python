@@ -1,0 +1,103 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Unicode
+
+2
+00:00:09,000 --> 00:00:13,900
+manche Spracheigenschaften von Python haben sich ab Version 3.x geaendert
+
+3
+00:00:14,000 --> 00:00:16,900
+Dazu gehoeren insbesondere die Zeichenketten
+
+4
+00:00:17,000 --> 00:00:21,900
+Erst ab Version 3.x arbeitet Python immer mit Unicode-Zeichenketten
+
+5
+00:00:22,000 --> 00:00:26,900
+Davor muss die Verwendung von Unicode bei der Erstellung von Zeichenketten erzwungen werden
+
+6
+00:00:27,000 --> 00:00:31,900
+Unterbleibt dies, koennen schnell schwer zu ermittelnde Probleme auftreten
+
+7
+00:00:32,000 --> 00:00:34,900
+Auch Zeichenketten aus Dateien und anderen Quellen
+
+8
+00:00:35,000 --> 00:00:38,900
+sollten so frueh wie moeglich in Unicode umgewandelt werden
+
+9
+00:00:39,000 --> 00:00:42,900
+Ab Python 3 muss sich der Entwickler darum nicht mehr kuemmern
+
+10
+00:00:43,000 --> 00:00:47,900
+Eine Unicode-Zeichenkette wird in Python 2.x
+
+11
+00:00:48,000 --> 00:00:54,900
+durch das Voranstellen eines u vor die Zeichenkette oder den Aufruf der Funktion unicode() erstellt
+
+12
+00:00:55,000 --> 00:01:02,900
+Ein Beispiel, python ENTER, die interaktive Shell
+
+13
+00:01:03,000 --> 00:01:19,900
+u"Ich bin eine Unicode-Zeichenkette"
+
+14
+00:01:20,000 --> 00:01:40,900
+unicode("Auch ich bin eine Unicode-Zeichenkette")
+
+15
+00:01:41,000 --> 00:01:45,900
+Ein weiterer Unterschied zu Python 3.x ist die Verwendung von print
+
+16
+00:01:46,000 --> 00:01:51,900
+Erst ab Python 3 wird print als Funktion verwendet und muss wie folgt aufgerufen werden
+
+17
+00:01:52,000 --> 00:02:00,900
+print("Hallo Welt")
+
+18
+00:02:01,000 --> 00:02:06,900
+Vor Python 3 wurde print als Statement implementiert
+
+19
+00:02:07,000 --> 00:02:16,900
+print "Hallo Welt"
+
+20
+00:02:17,000 --> 00:02:24,900
+Wichtig ist nur: Nutzer von Python 3.x verwenden print als Funktion (mit Klammern)
+
+21
+00:02:25,000 --> 00:02:27,900
+Nutzer von Python 2.x verwenden print ohne Klammern
+
+22
+00:02:28,000 --> 00:02:35,900
+Allen Zeichenketten wird von nun an also ein u vorangestellt, um Unicode-Zeichenketten zu erzeugen
+
+23
+00:02:36,000 --> 00:02:43,900
+Benutzereingaben werden im Folgenden mit der Funktion unicode() ebenfalls in Unicode umgewandelt
+
+24
+00:02:44,000 --> 00:02:51,900
+Nutzer von Python 3.x muessen das vorangestellte u und die Funktion unicode() jeweils auslassen
+
+25
+00:02:52,000 --> 00:02:58,900
+in Version 3.x wird ja ohnehin immer mit Unicode gearbeitet
+
+26
+00:02:59,000 --> 00:03:03,900
+Tschau und viel Glueck

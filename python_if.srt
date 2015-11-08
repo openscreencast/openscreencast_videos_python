@@ -1,0 +1,211 @@
+1
+00:00:05,000 --> 00:00:09,900
+Hallo - Python-Programmierung - if-Anweisung
+
+2
+00:00:10,000 --> 00:00:13,900
+Die Zeilen wurden gespeichert als Datei if.py im Ordner Desktop
+
+3
+00:00:14,000 --> 00:00:19,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:20,000 --> 00:00:22,900
+if-Bloecke bieten die Moeglichkeit
+
+5
+00:00:23,000 --> 00:00:27,900
+das Ausfuehren eines bestimmten Code-Teiles von einer oder mehreren Bedingungen abhaengig zu machen
+
+6
+00:00:28,000 --> 00:00:33,900
+In dem Kopf des if-Blockes wird die Bedingung fuer die Ausfuehrung definiert, also beispielsweise
+
+7
+00:00:34,000 --> 00:00:40,900
+number = 5, eine Variable mit dem Wert 5 setzen, naechste Zeile
+
+8
+00:00:41,000 --> 00:00:47,900
+if number > 3:, naechste Zeile
+
+9
+00:00:48,000 --> 00:01:00,900
+einruecken, print u"Zahl groesser als 3"
+
+10
+00:01:01,000 --> 00:01:08,900
+Speichern und Ausfuehren, python if.py
+
+11
+00:01:09,000 --> 00:01:14,900
+Bei der Definition derartiger Bedingungen sind besonders vergleichende Operatoren wichtig
+
+12
+00:01:15,000 --> 00:01:18,900
+Im Kopf eines if-Blockes koennen - durch boolesche Operatoren verknuepft
+
+13
+00:01:19,000 --> 00:01:24,900
+eine ganze Reihe derartiger Vergleiche aneinandergereiht werden, z.B.
+
+14
+00:01:25,000 --> 00:01:27,900
+number = 20
+
+15
+00:01:28,000 --> 00:01:39,900
+if number > 10 and number < 40:
+
+16
+00:01:40,000 --> 00:01:59,900
+einruecken, print u"Zahl liegt zwischen 10 und 40", Speichern und Ausfuehren
+
+17
+00:02:00,000 --> 00:02:04,900
+Durch den Operator and muessen beide Vergleiche wahr sein
+
+18
+00:02:05,000 --> 00:02:08,900
+damit der if-Rumpf ausgefuehrt und die Meldung ausgegeben wird
+
+19
+00:02:09,000 --> 00:02:17,900
+Verwendet man dahingegen den Operator or, muss nur eine der Bedingungen wahr sein, z.B.
+
+20
+00:02:18,000 --> 00:02:28,900
+good_looking = False, naechste Zeile
+
+21
+00:02:29,000 --> 00:02:34,900
+rich = True, naechste Zeile
+
+22
+00:02:35,000 --> 00:02:51,900
+if good_looking == True or rich == True:, naechste Zeile
+
+23
+00:02:52,000 --> 00:03:07,900
+einruecken, print u"Heirate mich!", Speichern und Ausfuehren
+
+24
+00:03:08,000 --> 00:03:10,900
+Hier wird die Meldung "Heirate mich!" ausgegeben
+
+25
+00:03:11,000 --> 00:03:16,900
+wenn die Variable good_looking oder die Variable rich True ist (oder beide)
+
+26
+00:03:17,000 --> 00:03:23,900
+In Zeile 6 werden die Variablen dazu mit True verglichen
+
+27
+00:03:24,000 --> 00:03:28,900
+Dieser Vergleich mit True ist eigentlich immer unnoetig
+
+28
+00:03:29,000 --> 00:03:32,900
+ueblich und schoener zu lesen ist folgende Schreibweise
+
+29
+00:03:33,000 --> 00:03:44,900
+if good_looking or rich: (Zeile 6), Speichern und Ausfuehren
+
+30
+00:03:45,000 --> 00:03:50,900
+Am Ende dieses Abschnitt soll noch kurz auf die Moeglichkeit eingegangen werden
+
+31
+00:03:51,000 --> 00:03:58,900
+mehrere Eventualitaeten mit if abzudecken, z.B.
+
+32
+00:03:59,000 --> 00:04:05,900
+number = 20, naechste Zeile
+
+33
+00:04:06,000 --> 00:04:11,900
+if number < 10:, naechste Zeile
+
+34
+00:04:12,000 --> 00:04:21,900
+einruecken, print u"Kleiner 10", naechste Zeile
+
+35
+00:04:22,000 --> 00:04:31,900
+elif number < 20:, naechste Zeile
+
+36
+00:04:32,000 --> 00:04:42,900
+einruecken, print u"Kleiner 20", naechste Zeile
+
+37
+00:04:43,000 --> 00:04:45,900
+else:, naechste Zeile
+
+38
+00:04:46,000 --> 00:05:03,900
+einruecken, print u"Groesser oder gleich 20", Speichern und Ausfuehren
+
+39
+00:05:04,000 --> 00:05:11,900
+Das Schluesselwort elif steht fuer else if und gelangt immer dann zur Ausfuehrung
+
+40
+00:05:12,000 --> 00:05:15,900
+wenn die vorherige if-Bedingung nicht erfuellt war
+
+41
+00:05:16,000 --> 00:05:22,900
+Mit elif koennen - ebenso wie mit if - eine Vielzahl von Bedingungen definiert werden
+
+42
+00:05:23,000 --> 00:05:39,900
+Waere number beispielsweise 3, waere die Bedingung in Zeile 5 wahr und Zeile 6 kaeme zur Ausfuehrung
+
+43
+00:05:40,000 --> 00:05:48,900
+Waere number aber 11, waere die Bedingung in Zeile 5 nicht erfuellt
+
+44
+00:05:49,000 --> 00:05:55,900
+und der Interpreter wuerde die Bedingung in Zeile 7 pruefen
+
+45
+00:05:56,000 --> 00:06:03,900
+Da diese in diesem Fall wahr waere, kaeme Zeile 8 zur Ausfuehrung
+
+46
+00:06:04,000 --> 00:06:11,900
+Waere number aber nun 40 und entsprechend keine der beiden Bedingungen wahr
+
+47
+00:06:12,000 --> 00:06:15,900
+kaeme Zeile 10 zur Ausfuehrung
+
+48
+00:06:16,000 --> 00:06:20,900
+Das Schluesselwort else ist also immer dann (und nur dann) von Bedeutung
+
+49
+00:06:21,000 --> 00:06:27,900
+wenn keine der vorherigen if oder elif-Bedingungen erfuellt wurde
+
+50
+00:06:28,000 --> 00:06:37,900
+Das kann ich hier nochmal zeigen, ich setze number = 3, Speichern und Ausfuehren
+
+51
+00:06:38,000 --> 00:06:49,900
+und ich setze den Wert number = 40, Speichern und Ausfuehren
+
+52
+00:06:50,000 --> 00:07:00,900
+oder ich setze den Wert number = 15, Speichern und Ausfuehren
+
+53
+00:07:02,000 --> 00:07:06,900
+OK, Tschau und viel Glueck
