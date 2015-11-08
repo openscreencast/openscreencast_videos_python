@@ -1,0 +1,103 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - die For-Schleife
+
+2
+00:00:09,000 --> 00:00:18,900
+die Zeilen wurden gespeichert als Datei for.py im Verzeichnis Desktop
+
+3
+00:00:19,000 --> 00:00:24,900
+Die Datei for.py wurde als ausfuehrbar markiert
+
+4
+00:00:26,000 --> 00:00:28,900
+hier soll nun die for-Schleife besprochen werden
+
+5
+00:00:29,000 --> 00:00:33,900
+Mit dieser Schleife kann man beliebige Anweisungen beliebig oft ausfuehren lassen
+
+6
+00:00:34,000 --> 00:00:39,900
+Mit folgendem einfachen Beispiel werden zehn Zahlen nacheinander ausgegeben
+
+7
+00:00:40,000 --> 00:00:57,900
+for i in range(0, 10): naechste Zeile
+
+8
+00:00:58,000 --> 00:01:04,900
+Einruecken, print(i), naechste Zeile
+
+9
+00:01:05,000 --> 00:01:18,900
+print("Fertig"), Speichern
+
+10
+00:01:19,000 --> 00:01:32,900
+Die Ausgabe des Skriptes sieht wie folgt aus, python for.py
+
+11
+00:01:34,000 --> 00:01:37,900
+Was passiert in dem Beispiel genau
+
+12
+00:01:38,000 --> 00:01:39,900
+Die Funktion range() liefert
+
+13
+00:01:40,000 --> 00:01:43,900
+vereinfacht gesagt, es gibt hier Unterschiede in den verschiedenen Python-Versionen
+
+14
+00:01:44,000 --> 00:01:47,900
+eine Liste von 0 bis 9 zurueck
+
+15
+00:01:48,000 --> 00:01:54,900
+Die Anweisung for i in range(0, 10) laesst sich umgangssprachlich uebersetzen mit
+
+16
+00:01:55,000 --> 00:02:02,900
+Fuer jedes Element i in der Liste der Zahlen von 0 bis ausschliesslich 10 mache ...
+
+17
+00:02:03,000 --> 00:02:07,900
+Die Liste der Zahlen von 0 bis 9 wird also schrittweise durchlaufen
+
+18
+00:02:08,000 --> 00:02:14,900
+Zunaechst wird i der Wert 0 zugewiesen und dann die Anweisung print(i) ausgefuehrt
+
+19
+00:02:15,000 --> 00:02:21,900
+Danach wird i der Wert 1 zugewiesen und erneut der Anweisungsblock ausgefuehrt etc
+
+20
+00:02:22,000 --> 00:02:26,900
+Man nennt dieses Vorgehen auch Iteration
+
+21
+00:02:27,000 --> 00:02:31,900
+An diesem Beispiel wird auch deutlich, warum richtiges Einruecken so wichtig ist
+
+22
+00:02:32,000 --> 00:02:41,900
+Rueckt man die Zeile print("Fertig") in Zeile 6 auch ein
+
+23
+00:02:42,000 --> 00:02:45,900
+wird diese Anweisung bei jedem Schleifendurchlauf ausgefuehrt
+
+24
+00:02:46,000 --> 00:02:48,900
+und nicht erst nach dem Durchlaufen der Schleife
+
+25
+00:02:49,000 --> 00:02:57,900
+Speichern, Ausfuehren, das sieht dann so aus
+
+26
+00:02:59,000 --> 00:03:02,900
+Tschau und viel Glueck
