@@ -1,0 +1,139 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Listen - Teil2
+
+2
+00:00:09,000 --> 00:00:15,900
+Die Zeilen wurden im Voraus gespeichert als Datei listen.py im Ordner Arbeitsflaeche
+
+3
+00:00:16,000 --> 00:00:20,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:21,000 --> 00:00:23,900
+Listen haben auch zusaetzliche Methoden, die sehr nuetzlich sein koennen
+
+5
+00:00:24,000 --> 00:00:28,900
+Mit der Methode append() kann ein weiterer Eintrag angehaengt werden
+
+6
+00:00:29,000 --> 00:00:32,900
+wie man in den Zeilen 5 und 6 sehen kann
+
+7
+00:00:33,000 --> 00:00:37,900
+Zeile 9 zeigt das Ergebnis
+
+8
+00:00:38,000 --> 00:00:40,900
+Die beiden Unicode-Objekte Carla und Herman
+
+9
+00:00:41,000 --> 00:00:45,900
+wurden in der Reihenfolge der append-Aufrufe an die Liste angefuegt
+
+10
+00:00:46,000 --> 00:00:54,900
+Analog dazu lassen sich Eintraege mit der Methode remove() entfernen (siehe Zeile 10)
+
+11
+00:00:55,000 --> 00:01:00,900
+Das Ergebnis sieht man in der Zeile 13
+
+12
+00:01:01,000 --> 00:01:05,900
+Hierbei sollte beachtet werden, dass jeweils nur das erste Vorkommen von Hermann entfernt wird
+
+13
+00:01:06,000 --> 00:01:14,900
+OK - Speichern und Ausfuehren - python listen.py
+
+14
+00:01:15,000 --> 00:01:24,900
+Gibt es mehrere gleichlautende Eintraege, muss remove() auch mehrfach ausgefuehrt werden, etwa wie folgt
+
+15
+00:01:25,000 --> 00:01:36,900
+Ich kopiere Zeile 6 und 7 - fuege also noch ein Hermann hinzu
+
+16
+00:01:37,000 --> 00:01:52,900
+naechste Zeile - while u"Hermann" in persons: - naechste Zeile
+
+17
+00:01:53,000 --> 00:02:08,900
+Einruecken - persons.remove(u"Hermann") - naechste Zeile
+
+18
+00:02:08,000 --> 00:02:15,900
+print persons - Speichern und Ausfuehren
+
+19
+00:02:16,000 --> 00:02:22,900
+Wichtig hierbei: Da die Zeichenketten Hermann in der Liste Unicode-Objekte sind
+
+20
+00:02:23,000 --> 00:02:28,900
+sollte auch als Such-Zeichenkette ein Unicode-Objekt angegeben werden um Fehler zu vermeiden
+
+21
+00:02:29,000 --> 00:02:37,900
+Wird versucht, einen Eintrag zu entfernen, der gar nicht in der Liste vorhanden ist (etwa Heidi)
+
+22
+00:02:38,000 --> 00:02:40,900
+kommt es zu einer Fehlermeldung
+
+23
+00:02:41,000 --> 00:03:03,900
+Das sieht so aus: persons.remove(u"Heidi") - Speichern und Ausfuehren
+
+24
+00:03:04,000 --> 00:03:06,900
+Der Versuch, Heidi zu entfernen scheitert
+
+25
+00:03:07,000 --> 00:03:09,900
+Dieser Eintrag ist in der Liste gar nicht vorhanden
+
+26
+00:03:10,000 --> 00:03:15,900
+Die Reaktion des Python-Interpreters sieht man in diesen Zeilen
+
+27
+00:03:17,000 --> 00:03:25,900
+In einem spaeteren Teil dieser Reihe werden Python-Fehler (meist Exceptions genannt) naeher behandelt
+
+28
+00:03:26,000 --> 00:03:32,900
+Hier soll zunaechst gezeigt werden, wie vor dem Loeschen eines Eintrages ueberprueft werden kann
+
+29
+00:03:33,000 --> 00:03:36,900
+ob er sich ueberhaupt in der Liste befindet
+
+30
+00:03:33,000 --> 00:03:53,900
+if u"Heidi" in persons: - naechste Zeile
+
+31
+00:03:54,000 --> 00:04:14,900
+Einruecken - persons.remove(u"Heidi") - Speichern und Ausfuehren
+
+32
+00:04:15,000 --> 00:04:16,900
+Nun wird mit dem Operator in geprueft
+
+33
+00:04:17,000 --> 00:04:20,900
+ob der Eintrag Heidi ueberhaupt in der Liste existiert
+
+34
+00:04:21,000 --> 00:04:25,900
+Sehr schoen zu sehen ist dabei, wie intuitiv und natuerlich Python sein kann
+
+35
+00:04:27,000 --> 00:04:29,900
+Tschau und viel Glueck

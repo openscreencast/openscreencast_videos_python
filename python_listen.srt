@@ -1,0 +1,103 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Listen
+
+2
+00:00:09,000 --> 00:00:15,900
+Die Datei wurde im Voraus gespeichert als Datei listen.py im Ordner Arbeitsflaeche
+
+3
+00:00:16,000 --> 00:00:19,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:20,000 --> 00:00:24,900
+Bei Listen handelt es sich um einen Datentyp
+
+5
+00:00:25,000 --> 00:00:27,900
+der beliebige andere Datentypen verwalten kann (sogar gemischt)
+
+6
+00:00:28,000 --> 00:00:30,900
+gewissermassen also ein Aktenschrank fuer Zeichenketten
+
+7
+00:00:31,000 --> 00:00:34,900
+Zahlen und alle moeglichen anderen Objekte die in Python vorkommen
+
+8
+00:00:35,000 --> 00:00:40,900
+sogar Listen lassen sich in Listen ablegen, so dass verschachtelte Listen moeglich sind
+
+9
+00:00:41,000 --> 00:00:44,900
+Listen werden in Python mit eckigen Klammern ([ und ]) gekennzeichnet
+
+10
+00:00:45,000 --> 00:00:47,900
+Sie sind sehr leicht zu erstellen
+
+11
+00:00:48,000 --> 00:00:58,900
+und zwar so: persons = [] - naechste Zeile
+
+12
+00:00:59,000 --> 00:01:09,900
+print type(persons) - naechste Zeile
+
+13
+00:01:10,000 --> 00:01:19,900
+persons = list() - naechste Zeile
+
+14
+00:01:20,000 --> 00:01:30,900
+print type(persons) - naechste Zeile
+
+15
+00:01:31,000 --> 00:02:01,900
+persons = [u"Peter", u"Hermann", u"Simon"] - naechste Zeile
+
+16
+00:02:02,000 --> 00:02:15,900
+print persons - Speichern und Ausfuehren - python listen.py
+
+17
+00:02:16,000 --> 00:02:25,900
+In Zeile 4 wird eine leere Liste erstellt und an den Namen persons gebunden
+
+18
+00:02:26,000 --> 00:02:34,900
+In Zeile 5 wird mit der Funktion type() der Typ des Objektes
+
+19
+00:02:35,000 --> 00:02:37,900
+welches an persons gebunden ist, ausgegeben
+
+20
+00:02:38,000 --> 00:02:44,900
+Wie erwartet, handelt es sich dabei um eine Liste
+
+21
+00:02:45,000 --> 00:02:55,900
+Zeile 6 zeigt die Erzeugung mittels der Funktion list()
+
+22
+00:02:56,000 --> 00:02:57,900
+Das Ergebnis ist das gleiche
+
+23
+00:02:58,000 --> 00:03:03,900
+In Zeile 8 sieht man, dass man in Python eine Liste direkt befuellen kann
+
+24
+00:03:04,000 --> 00:03:11,900
+Es werden die drei Unicode-Zeichenketten Peter, Hermann und Simon in die Liste eingetragen
+
+25
+00:03:12,000 --> 00:03:17,900
+und in Zeile 9 wird die Liste ausgegeben
+
+26
+00:03:20,000 --> 00:03:22,900
+Tschau und viel Glueck
