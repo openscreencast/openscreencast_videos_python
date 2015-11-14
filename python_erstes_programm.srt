@@ -1,0 +1,142 @@
+1
+00:00:05,000 --> 00:00:09,900
+Python-Programmierung - Das erste "nuetzliche" Programm
+
+2
+00:00:10,000 --> 00:00:12,900
+Der Benutzer soll seinen Namen eingeben koennen
+
+3
+00:00:13,000 --> 00:00:17,900
+und diesen dann in einer Box aus Gleichheitszeichen dargestellt bekommen
+
+4
+00:00:18,000 --> 00:00:27,900
+Im Vorfeld wurden die Zeilen als name.py im Ordner Desktop gespeichert
+
+5
+00:00:28,000 --> 00:00:35,900
+und die Datei name.py wurde als ausfuehrbar markiert
+
+6
+00:00:37,000 --> 00:01:11,900
+4. Zeile - name = raw_input("Hallo! Wie heisst du? ")
+
+7
+00:01:12,000 --> 00:01:17,900
+In der vierten Zeile wird der Benutzer nach seinem Namen gefragt
+
+8
+00:01:18,000 --> 00:01:22,900
+Die Funktion raw_input() gibt die als Parameter uebergebene Zeichenkette
+
+9
+00:01:23,000 --> 00:01:28,900
+auf dem Bildschirm aus und wartet dann auf die Eingabe des Benutzers
+
+10
+00:01:29,000 --> 00:01:35,900
+Diese wird nach dem Druecken von Enter in der Variable name gespeichert
+
+11
+00:01:36,000 --> 00:01:44,900
+genauer: es wird ein Zeichenketten-Objekt erstellt, auf das die Variable verweist
+
+12
+00:01:45,000 --> 00:01:48,900
+Erst danach werden die uebrigen Zeilen des Skriptes verarbeitet
+
+13
+00:01:49,000 --> 00:01:55,900
+Achtung: Ab Python 3 heisst es input() und nicht mehr raw_input()
+
+14
+00:01:56,000 --> 00:01:59,900
+Bis Python 3 ist von der Verwendung von input() dringend abzuraten
+
+15
+00:02:00,000 --> 00:02:03,900
+weil die Benutzereingabe direkt vom Interpreter ausgefuehrt wird
+
+16
+00:02:04,000 --> 00:02:07,900
+das ist in den allermeisten Faellen nicht erwuenscht
+
+17
+00:02:08,000 --> 00:02:43,900
+5. Zeile - name_with_borders = "= {0} =".format(name)
+
+18
+00:02:44,000 --> 00:03:12,900
+6. Zeile - line = "=" * len(name_with_borders)
+
+19
+00:03:13,000 --> 00:03:17,900
+In Zeile 5 wird die Eingabe des Nutzers mit Gleichheitszeichen umgeben
+
+20
+00:03:18,000 --> 00:03:27,900
+Dazu wird die Zeichenkette = {0} = erzeugt und die Zeichenfolge {0}
+
+21
+00:03:28,000 --> 00:03:34,900
+mit Hilfe der format()-Methode durch den Inhalt der Variable name ersetzt
+
+22
+00:03:35,000 --> 00:03:42,900
+In Zeile 6 wird mit der Funktion len() die Laenge des Benutzernamens
+
+23
+00:03:43,000 --> 00:03:45,900
+inklusive Gleichheits- und Leerzeichen ermittelt und dann 
+
+24
+00:03:46,000 --> 00:03:49,900
+die entsprechende Anzahl von Gleichheitszeichen ausgegeben
+
+25
+00:03:50,000 --> 00:03:53,900
+Dazu wird hier der *-Operator benutzt
+
+26
+00:03:54,000 --> 00:03:57,900
+auch Zeichenketten lassen sich in Python also multiplizieren“
+27
+00:03:58,000 --> 00:04:01,900
+So entsteht eine Folge von Gleichheitszeichen
+
+28
+00:04:02,000 --> 00:04:05,900
+die so lang ist, wie die Zeichenkette name_with_borders
+
+29
+00:04:06,000 --> 00:04:14,900
+8. Zeile - print(line)
+
+30
+00:04:15,000 --> 00:04:24,900
+9. Zeile - print(name_with_borders)
+
+31
+00:04:25,000 --> 00:04:30,900
+10. Zeile - print(line)
+
+32
+00:04:31,000 --> 00:04:38,900
+In Zeile 9 wird die in Zeile 5 erstellte Zeichenkette auf dem Bildschirm ausgegeben
+
+33
+00:04:39,000 --> 00:04:45,900
+Zeilen 8 und 10 geben jeweils die in Zeile 6 erstellte Linie auf dem Bildschirm aus
+
+34
+00:04:46,000 --> 00:04:52,900
+Das Gesamtergebnis sieht dann wie folgt aus
+
+35
+00:04:53,000 --> 00:05:09,900
+python name.py ausfuehren, vorher natuerlich noch speichern
+
+36
+00:05:10,000 --> 00:05:19,900
+und ich gebe meinen Namen ein und das Ergebnis

@@ -1,0 +1,87 @@
+1
+00:00:05,000 --> 00:00:07,900
+Python - Programmierung - Hallo Welt
+
+2
+00:00:08,000 --> 00:00:19,900
+Ein erstes kleines Skript ist im Texteditor der Wahl schnell erstellt
+
+3
+00:00:46,000 --> 00:00:48,900
+Anders als in der interaktiven Python-Konsole
+
+4
+00:00:49,000 --> 00:00:52,900
+wo Eingaben direkt berechnet und auf den Bildschirm ausgegeben werden
+
+5
+00:00:53,000 --> 00:00:55,900
+benoetigt man in eigenstaendigen Skripten eine Funktion
+
+6
+00:00:56,000 --> 00:01:00,900
+welche die gewuenschten Informationen auf dem Bildschirm ausgibt
+
+7
+00:01:01,000 --> 00:01:06,900
+dazu dient in Python die print()-Funktion
+
+8
+00:01:07,000 --> 00:01:12,900
+Nur in der interaktiven Konsole kann auf diese Funktion in der Regel verzichtet werden 
+
+9
+00:01:13,000 --> 00:01:16,900
+wie etwa bei den mathematischen Operationen
+
+10
+00:01:17,000 --> 00:01:29,900
+Diese Zeilen werden als hello_world.py gespeichert
+
+11
+00:01:30,000 --> 00:01:39,900
+Die Datei hello_world.py wird nun mit dem Befehl
+
+12
+00:01:49,000 --> 00:02:02,900
+chmod +x hello_world.py
+
+13
+00:02:03,000 --> 00:02:07,900
+als ausfuehrbar markiert und schliesslich mit
+
+14
+00:02:08,000 --> 00:02:28,900
+./hello_world.py oder python hello_world.py gestartet
+
+15
+00:02:29,000 --> 00:02:32,900
+Es erscheint Hallo Welt! im Terminal
+
+16
+00:02:33,000 --> 00:02:37,900
+Das erste kleine Python-Skript ist funktionsfaehig
+
+17
+00:02:38,000 --> 00:02:46,900
+Bei der ersten Zeile handelt es sich um die sogenannte Shebang-Zeile
+
+18
+00:02:47,000 --> 00:02:51,900
+Hier wird festgelegt, dass die Datei mit dem Python-Interpreter auszufuehren ist
+
+19
+00:02:52,000 --> 00:03:01,900
+Die zweite Zeile informiert den Python-Interpreter ueber die verwendete Zeichenkodierung
+
+20
+00:03:02,000 --> 00:03:06,900
+Diese beiden Zeilen sollten in allen Python-Dateien vorhanden sein
+
+21
+00:03:07,000 --> 00:03:13,900
+Ohne Hinweis auf die Kodierung kann es zu Problemen mit Umlauten in Zeichenketten kommen
+
+22
+00:03:14,000 --> 00:03:15,900
+Tschau und viel Glueck

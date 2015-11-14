@@ -1,0 +1,139 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Richtig einruecken
+
+2
+00:00:09,000 --> 00:00:11,900
+Viele Programmiersprachen kennen bestimmte Kontrollstrukturen
+
+3
+00:00:12,000 --> 00:00:15,900
+die den Programmfluss in besonderer Weise beeinflussen
+
+4
+00:00:16,000 --> 00:00:17,900
+Hier ein Beispiel in Pseudocode
+
+5
+00:00:18,000 --> 00:00:19,900
+zaehler = 1
+
+6
+00:00:20,000 --> 00:00:22,900
+solange zaehler <= 5 wiederhole
+
+7
+00:00:23,000 --> 00:00:24,900
+gib zaehler auf dem Bildschirm aus
+
+8
+00:00:25,000 --> 00:00:27,900
+erhoehe zaehler um 1
+
+9
+00:00:28,000 --> 00:00:29,900
+gib "fertig" auf dem Bildschirm aus
+
+10
+00:00:30,000 --> 00:00:33,900
+Klar: Hier wird der Zaehler von 1 bis 5 hochgezaehlt
+
+11
+00:00:34,000 --> 00:00:36,900
+und jeweils auf dem Bildschirm ausgegeben
+
+12
+00:00:37,000 --> 00:00:40,900
+Aber wie oft wird fertig auf den Bildschirm geschrieben
+
+13
+00:00:41,000 --> 00:00:45,900
+Es wird deutlich, dass dem Interpreter/Compiler irgendwie mitgeteilt werden muss
+
+14
+00:00:46,000 --> 00:00:51,900
+welche Information noch zur Kontrollstruktur gehoert und wo der normale Programmfluss fortgesetzt wird
+
+15
+00:00:52,000 --> 00:00:56,900
+Viele andere Programmiersprachen loesen das Problem mit geschweiften Klammern
+
+16
+00:00:57,000 --> 00:01:01,900
+die Anfang und Ende des auszufuehrenden Codeblocks markieren
+
+17
+00:01:02,000 --> 00:01:04,900
+In Python gibt es derartige Klammern nicht
+
+18
+00:01:05,000 --> 00:01:08,900
+zusammengehoerende Codebloecke muessen gemeinsam eingerueckt werden
+
+19
+00:01:09,000 --> 00:01:16,900
+so z.B. gib zaehler auf dem Bildschirm aus und erhoehe zaehler um 1
+
+20
+00:01:17:000 --> 00:01:24,900
+So weiss der Python-Interpreter, dass nur Zeilen 4 und 5 zur Kontrollstruktur gehoeren
+
+21
+00:01:25:000 --> 00:01:27,900
+fertig wird nur einmal auf dem Bildschirm ausgegeben
+
+22
+00:01:28:000 --> 00:01:33,900
+Waere auch Zeile 6 eingerueckt, wuerde fertig ebenfalls fuenfmal ausgegeben
+
+23
+00:01:34:000 --> 00:01:40,900
+Das Einruecken ist eine Besonderheit von Python und einigen wenigen anderen Sprachen
+
+24
+00:01:41:000 --> 00:01:43,900
+die das Lesen des Quelltextes vereinfachen soll
+
+25
+00:01:44:000 --> 00:01:48,900
+Der Benutzer wird gezwungen, sinnvoll einzuruecken
+
+26
+00:01:49:000 --> 00:01:54,900
+Wie viel eingerueckt wird und ob es mit Leerzeichen oder Tabulatoren geschieht
+
+27
+00:01:55:000 --> 00:01:59,900
+bleibt dem Benutzer ueberlassen - es muss nur einheitlich sein
+
+28
+00:02:00:000 --> 00:02:03,900
+Sobald Leerzeichen und Tabulatoren gemischt werden
+
+29
+00:02:04:000 --> 00:02:07,900
+oder an einer Stelle mit vier Leerzeichen eingerueckt wird
+
+30
+00:02:08:000 --> 00:02:11,900
+an anderer aber mit drei, kommt es zu Problemen
+
+31
+00:02:12:000 --> 00:02:15,900
+und das Programm wird sehr wahrscheinlich nicht richtig ausgefuehrt werden
+
+32
+00:02:16:000 --> 00:02:20,900
+Allgemein wird das Einruecken mit vier Leerzeichen empfohlen
+
+33
+00:02:21:000 --> 00:02:26,900
+Fast jeder gaengige Texteditor ist heute in der Lage statt Tabulatoren Leerzeichen einzufuegen
+
+34
+00:02:27:000 --> 00:02:34,900
+so dass dem Benutzer durch die Verwendung von Leerzeichen keinerlei Nachteile entstehen
+
+35
+00:02:36:000 --> 00:02:38,900
+Tschau und viel Glueck

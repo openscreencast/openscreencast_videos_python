@@ -1,0 +1,163 @@
+1
+00:00:05,000 --> 00:00:11,900
+Herzlich Willkommen - Python-Programmierung - Zeichenketten naeher betrachtet
+
+2
+00:00:12,000 --> 00:00:23,900
+Die Zeilen wurden im Vorfeld als Datei zeichenketten.py im Ordner Desktop gespeichert
+
+3
+00:00:24,000 --> 00:00:32,900
+Die Datei zeichenketten.py wurde als ausfuehrbar markiert
+
+4
+00:00:33,000 --> 00:00:35,900
+Zeichenketten in Python gehoeren
+
+5
+00:00:36,000 --> 00:00:40,900
+wie auch Zahlen, zu den unveraenderbaren Datentypen
+
+6
+00:00:41,000 --> 00:00:46,900
+Jede Veraenderung an einer Zeichenkette liefert immer eine neue Zeichenkette zurueck
+
+7
+00:00:47,000 --> 00:00:56,900
+text1 = "HALLO"
+
+8
+00:00:57,000 --> 00:01:08,900
+text2 = text1.lower() 
+
+9
+00:01:09,000 --> 00:01:15,900
+print(text1)
+
+10
+00:01:16,000 --> 00:01:23,900
+print(text2)
+
+11
+00:01:24,000 --> 00:01:33,900
+Speichern und Ausfuehren, python zeichenketten.py
+
+12
+00:01:34,000 --> 00:01:38,900
+Hier wurden die Grossbuchstaben 
+
+13
+00:01:39,000 --> 00:01:43,900
+mit der Methode lower() in Kleinbuchstaben umgewandelt
+
+14
+00:01:44,000 --> 00:01:48,900
+Tatsaechlich bleibt text1 davon aber unberuehrt
+
+15
+00:01:49,000 --> 00:01:52,900
+stattdessen wird eine voellig neue Zeichenkette erzeugt
+
+16
+00:01:53,000 --> 00:01:58,900
+Natuerlich ist es aber moeglich, eine Variable direkt neu zuzuweisen
+
+17
+00:01:59,000 --> 00:02:04,900
+so dass die Unveraenderbarkeit von Strings in der Praxis kaum Bedeutung hat
+
+18
+00:02:09,000 --> 00:02:15,900
+text = "HALLO" 
+
+19
+00:02:16,000 --> 00:02:23,900
+text = text.lower()
+
+20
+00:02:24,000 --> 00:02:32,900
+print(text), Speichern und Ausfuehren
+
+21
+00:02:35,000 --> 00:02:43,900
+Hier wird zunaechst der Variable text die Zeichenkette HALLO zugewiesen
+
+22
+00:02:44,000 --> 00:02:50,900
+Durch die Methode lower() wird eine neue Zeichenkette mit Kleinbuchstaben erstellt
+
+23
+00:02:51,000 --> 00:02:55,900
+Nun zeigt die Variable text auf die neu erstellte Zeichenkette
+
+24
+00:02:56,000 --> 00:03:00,900
+Da jetzt keine Variable mehr auf die alte Zeichenkette zeigt
+
+25
+00:03:01,000 --> 00:03:05,900
+wird diese bei Zeiten automatisch aus dem Speicher geloescht
+
+26
+00:03:06,000 --> 00:03:09,900
+Analog zu lower() gibt es mit upper() eine Methode
+
+27
+00:03:10,000 --> 00:03:15,900
+die eine Zeichenkette mit ausschliesslich Grossbuchstaben erzeugt
+
+28
+00:03:16,000 --> 00:03:21,900
+text = "hallo"
+
+29
+00:03:22,000 --> 00:03:30,900
+text = text.upper()
+
+30
+00:03:31,000 --> 00:03:38,900
+print(text), Speichern und Ausfuehren
+
+31
+00:03:40,000 --> 00:03:49,900
+Mit swapcase() werden kleine Buchstaben zu Grossbuchstaben und umgekehrt
+
+32
+00:03:50,000 --> 00:04:00,900
+text = "HAllo"
+
+33
+00:04:01,000 --> 00:04:09,900
+text = text.swapcase()
+
+34
+00:04:10,000 --> 00:04:14,900
+print(text), Speichern und Ausfuehren
+
+35
+00:04:15,000 --> 00:04:20,900
+Geradezu unerlaesslich ist die replace()-Methode
+
+36
+00:04:21,000 --> 00:04:28,900
+Sie ersetzt alle Vorkommen einer gesuchten Zeichenfolge innerhalb einer Zeichenkette
+
+37
+00:04:29,000 --> 00:04:40,900
+text = "Python ist OK"
+
+38
+00:04:41,000 --> 00:05:03,900
+text = text.replace("OK", "SUPER")
+
+39
+00:05:04,000 --> 00:05:11,900
+print(text), Speichern und Ausfuehren
+
+40
+00:05:12,000 --> 00:05:18,900
+Weitere nuetzliche Zeichenketten-Funktionen sind moeglich
+
+41
+00:05:20,000 --> 00:05:23,900
+Tschau und Viel Glueck

@@ -1,0 +1,103 @@
+1
+00:00:05,000 --> 00:00:12,900
+Python-Programmierung, Python erfreut sich seit einiger Zeit grosser Beliebtheit bei Anfaengern und Fortgeschrittenen
+
+2
+00:00:13,000 --> 00:00:18,900
+Die Sprache ueberzeugt durch Einfachheit und die grosse Zahl mitgelieferter Bibliotheken
+
+3
+00:00:19,000 --> 00:00:23,900
+Sowohl als Skript-Sprache, etwa fuer GIMP, als auch bei eigenstaendigen Projekten
+
+4
+00:00:24,000 --> 00:00:25,900
+ist Python immer haeufiger anzutreffen
+
+5
+00:00:26,000 --> 00:00:29,900
+Bekannte Programme wie PiTiVi oder BitTorrent setzen auf Python
+
+6
+00:00:30,000 --> 00:00:34,900
+und auch im Hintergrund von Google und Youtube soll die maechtige Sprache nicht mehr wegzudenken sein
+
+7
+00:00:35,000 --> 00:00:39,900
+Python ist mittlerweile bei allen grossen Distributionen vorinstalliert
+
+8
+00:00:40,000 --> 00:00:42,900
+Die interaktive Shell
+
+9
+00:00:43,000 --> 00:00:48,900
+Python-Skripte werden nicht kompiliert, sondern zur Laufzeit von einem Interpreter ausgefuehrt
+
+10
+00:00:49,000 --> 00:00:52,900
+Python-Skripte sind somit immer direkt lauffaehig
+
+11
+00:00:53,000 --> 00:00:59,900
+Der Python-Interpreter hat zudem einen interaktiven Modus – hier koennen Befehle direkt abgesetzt werden
+
+12
+00:01:00,000 --> 00:01:13,900
+Dieser interaktive Modus kann in einem Terminal mit dem Befehl python gestartet werden
+
+13
+00:01:14,000 --> 00:01:20,900
+Hinter der Eingabeaufforderung (>>>) koennen beliebige Python-Befehle abgesetzt werden
+
+14
+00:01:21,000 --> 00:01:34,900
+Die Befehlszeile >>> print("Hallo Python!")
+
+15
+00:01:35,000 --> 00:01:41,900
+gibt in der naechsten Zeile erwartungsgemaess Hallo Python! aus
+
+16
+00:01:42,000 --> 00:01:46,900
+Auch Berechnungen lassen sich direkt in ihr durchfuehren
+
+17
+00:01:47,000 --> 00:02:05,900
+>>> 3+7 = 10 >>> 7*10 = 70 >>> 3-7 = -4 >>> 8/4 = 2 >>> 8/3 = 2
+
+18
+00:02:06,000 --> 00:02:10,900
+Die wichtigsten mathematischen Operatoren sind damit gleich bekannt
+
+19
+00:02:11,000 --> 00:02:14,900
+Auffaellig erscheint allerdings das letzte Ergebnis
+
+20
+00:02:15,000 --> 00:02:19,900
+In den Python-Versionen vor 3.0 geht der Python-Interpreter bei Divisionen davon aus,
+
+21
+00:02:20,000 --> 00:02:23,900
+dass der Benutzer eine Ganzzahldivision durchfuehren moechte
+
+22
+00:02:24,000 --> 00:02:30,900
+Erst die Eingabe >>> 8/3.0
+
+23
+00:02:31,000 --> 00:02:34,900
+fuehrt zum erwuenschten Ergebnis und zeigt auch Nachkommastellen an
+
+24
+00:02:35,000 --> 00:02:42,900
+Die interaktive Konsole ist ideal, um erste Erfahrungen mit Python zu sammeln
+
+25
+00:02:43,000 --> 00:02:47,900
+Fuer groessere Projekte empfiehlt sich aber ein Texteditor
+
+26
+00:02:53,000 --> 00:02:55,900
+Tschau und viel Glueck
