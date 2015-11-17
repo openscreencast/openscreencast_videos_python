@@ -1,0 +1,95 @@
+1
+00:00:05,000 --> 00:00:07,900
+Hallo - Python-Programmierung - Listen-Index
+
+2
+00:00:08,000 --> 00:00:14,900
+Die Zeilen wurden im Voraus gespeichert als Datei listen.py im Ordner Arbeitsflaeche
+
+3
+00:00:15,000 --> 00:00:18,900
+und die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:19,000 --> 00:00:22,900
+Beim Umgang mit Listen sollte man wissen, dass Python die Listeneintraege
+
+5
+00:00:23,000 --> 00:00:24,900
+mit einem sogenannten Index verwaltet
+
+6
+00:00:25,000 --> 00:00:30,900
+Jedem Listeneintrag wird mit 0 beginnend eine eindeutige Zahl zugewiesen
+
+7
+00:00:31,000 --> 00:00:34,900
+Der erste Eintrag wird also mit 0 angesprochen der zweite Eintrag mit 1 usw.
+
+8
+00:00:35,000 --> 00:00:39,900
+So ist es sehr leicht, auf einzelne Eintraege zuzugreifen
+
+9
+00:00:40,000 --> 00:00:48,900
+z.B. in der Liste letters ist der erste Eintrag Paul, der zweite Eintrag Juno, der dritte 23
+
+10
+00:00:49,000 --> 00:00:58,900
+naechste Zeile - print letters[1] - Speichern und Ausfuehren
+
+11
+00:00:59,000 --> 00:01:03,900
+python listen.py ENTER
+
+12
+00:01:04,000 --> 00:01:07,900
+Damit wird der zweite Listeneintrag ausgelesen
+
+13
+00:01:08,000 --> 00:01:11,900
+der erste Listeneintrag hat ja den Index 0
+
+14
+00:01:12,000 --> 00:01:16,900
+Soll von hinten gezaehlt werden, wird einfach ein negativer Index angegeben
+
+15
+00:01:17,000 --> 00:01:28,900
+z.B. print letters[-3] - Speichern und Ausfuehren
+
+16
+00:01:29,000 --> 00:01:33,900
+Dabei ist das Ergebnis Paul
+
+17
+00:01:35,000 --> 00:01:45,900
+Zeichenketten haben auch einen Index - z.B. z = "Paul" - naechste Zeile
+
+18
+00:01:46,000 --> 00:02:06,900
+print z[0] - Speichern und Ausfuehren - so wird der erste Eintrag in der Zeichenkette ausgelesen - P
+
+19
+00:02:07,000 --> 00:02:14,900
+print z[1] - Speichern und Ausfuehren - das waere dann a
+
+20
+00:02:15,000 --> 00:02:24,900
+Moechte man einen Buchstaben aus einer Zeichenkette auslesen
+
+21
+00:02:25,000 --> 00:02:29,900
+und die Zeichenkette ist in einer Liste - geht das wie folgt
+
+22
+00:02:30,000 --> 00:03:00,900
+print letters[0][3] - Speichern und Ausfuehren - Das Ergebnis ist l (1. Listeneintrag - Paul, 4. Zeichenketteneintrag - l) 
+
+23
+00:03:01,000 --> 00:03:11,900
+so geht das auch mit dem zweiten Listeneintrag(Juno) und dem ersten Buchstaben der Zeichenkette - print letters[1][0] - J
+
+24
+00:03:13,000 --> 00:03:16,900
+Tschau und viel Glueck
