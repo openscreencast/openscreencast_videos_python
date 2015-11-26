@@ -1,0 +1,219 @@
+1
+00:00:05,000 --> 00:00:08,900
+Hallo - Python-Programmierung - Mehr ueber Zeichenketten
+
+2
+00:00:09,000 --> 00:00:17,900
+Die Zeilen wurden gespeichert als Datei zeichenketten.py im Ordner Desktop
+
+3
+00:00:18,000 --> 00:00:24,900
+Die Datei wurde als ausfuehrbar markiert
+
+4
+00:00:27,000 --> 00:00:30,900
+Vorerst aber was ueber Kommentare
+
+5
+00:00:31,000 --> 00:00:33,900
+Kommentare sind wichtig fuer viele Dinge
+
+6
+00:00:34,000 --> 00:00:38,900
+Nicht nur, dass sie Ihnen oder jemand anderem eine Vorstellung davon geben, was Sie versuchen zu tun
+
+7
+00:00:39,000 --> 00:00:42,900
+sondern wenn Sie nach 6 Monaten wieder zu Ihrem Code zurueckkommen
+
+8
+00:00:43,000 --> 00:00:46,900
+koennen Sie sich schneller daran erinnern was Zeile fuer Zeile eigentlich passiert
+
+9
+00:00:47,000 --> 00:00:52,900
+Wenn Sie mit dem Schreiben von vielen Programmen beginnen wird das sehr wichtig
+
+10
+00:00:53,000 --> 00:00:58,900 
+Per Kommentar koennen Sie Python auch bestimmte Codezeilen ignorieren lassen
+
+11
+00:00:59,000 --> 00:01:04,900
+Fuer einen Kommentar verwenden Sie das Zeichen #
+
+12
+00:01:05,000 --> 00:01:14,900
+Zum Beispiel # Das ist ein Kommentar
+
+13
+00:01:15,000 --> 00:01:32,900
+print "Das ist kein Kommentar" # Kommentar
+
+14
+00:01:33,000 --> 00:01:43,900
+Speichern und Ausfuehren - python zeichenketten.py
+
+15
+00:01:44,000 --> 00:01:49,900
+Sie koennen also Kommentare irgendwo in eine Code-Zeile schreiben
+
+16
+00:01:50,000 --> 00:01:55,900
+Python ignoriert alles nach dem Zeichen #
+
+17
+00:01:56,000 --> 00:01:58,900
+Mehr ueber Zeichenketten
+
+18
+00:01:59,000 --> 00:02:05,900
+Wir haben eine Variable s die '4' beinhaltet
+
+19
+00:02:06,000 --> 00:02:21,900
+s = '4', naechste Zeile print s, Speichern und Ausfuehren
+
+20
+00:02:22,000 --> 00:02:27,900
+Es sieht so aus als ob s die Zahl 4 enthaelt, es ist aber nicht so
+
+21
+00:02:28,000 --> 00:02:30,900
+Stattdessen enthaelt sie eine Zeichenfolge 4
+
+22
+00:02:31,000 --> 00:02:53,900
+Also, wenn wir print s * 4 eintippen, bekommen wir folgendes 4444
+
+23
+00:02:54,000 --> 00:02:59,900
+Noch einmal, der Interpreter weiss, dass s eine Zeichenkette ist, und kein Zahlenwert
+
+24
+00:03:00,000 --> 00:03:07,900
+Er erkennt dies an den einfachen Anfuehrungszeichen um den Wert 4 herum, es ist also eine Zeichenkette
+
+25
+00:03:08,000 --> 00:03:24,900
+Wir koennen per print type(s) sehen was s fuer ein Typ ist
+
+26
+00:03:25,000 --> 00:03:34,900
+Speichern und Ausfuehren - es ist eine Zeichenkette - str
+
+27
+00:03:35,000 --> 00:03:40,900
+Wollen wir s als einen numerischen Wert, koennten wir folgendes tun
+
+28
+00:03:41,000 --> 00:03:55,900
+print int(s) * 4, Speichern - Ausfuehren
+
+29
+00:03:56,000 --> 00:03:59,900
+Die Zeichenkette s, die '4' enthaelt
+
+30
+00:04:00,000 --> 00:04:05,900
+wurde nun zu einem numerischen Wert (integer) umgewandelt und dann multipliziert
+
+31
+00:04:06,000 --> 00:04:09,900
+Eine Zeichenkette ist eine Reihe von Zeichen, nicht viel mehr
+
+32
+00:04:10,000 --> 00:04:14,900
+In der Tat ist eine Zeichenkette ein Array von Zeichen
+
+33
+00:04:15,000 --> 00:04:23,900
+Zum Beispiel, wenn wir die Zeichenfolge 'Hallo Welt', einer Variable mit dem Namen strng zuweisen
+
+34
+00:04:24,000 --> 00:04:31,900
+und dann wissen wollen, was das zweite Zeichen ist, koennten wir eingeben
+
+35
+00:04:32,000 --> 00:05:08,900
+strng = 'Hallo Welt', naechste Zeile print strng[1], Speichern und Ausfuehren
+
+36
+00:05:09,000 --> 00:05:22,900
+Das Ergebnis ist a. Das erste Zeichen waere [0], Speichern - Ausfuehren, das waere das H
+
+37
+00:05:23,000 --> 00:05:31,900
+das dritte waere [2], Speichern - Ausfuehren, ein l und so weiter
+
+38
+00:05:32,000 --> 00:05:38,900
+Wenn wir die Zeichen von Position 4 bis Position 8 wollen, koennten wir eintippen
+
+39
+00:05:39,000 --> 00:05:52,900
+print strng[4:8], Speichern und Ausfuehren
+
+40
+00:05:53,000 --> 00:06:05,900
+Mit Hilfe von len() koennen wir herausfinden, wie viele Zeichen unsere Variable enthaelt
+
+41
+00:06:06,000 --> 00:06:23,900
+also zum Beispiel print len​​(strng), Speichern - Ausfuehren, die Variable enthaelt 10 Zeichen
+
+42
+00:06:24,000 --> 00:06:26,900
+Wenn wir herausfinden wollen
+
+43
+00:06:27,000 --> 00:06:34,900
+wo in unserer Zeichenfolge die Zeichenfolge ll ist, koennten wir folgendes verwenden
+
+44
+00:06:35,000 --> 00:07:08,900
+pos = strng.find('ll'), naechste Zeile print pos, Speichern - Ausfuehren
+
+45
+00:07:09,000 --> 00:07:16,900
+Nun, die Variable pos (kurz fuer die Position) enthaelt 2
+
+46
+00:07:17,000 --> 00:07:25,900
+dass heisst die Zeichenfolge ll beginnt an Position 2 in der Zeichenkette Hallo Welt
+
+47
+00:07:26,000 --> 00:07:30,900
+Wenn wir eine Zeichenfolge suchen wuerden die nicht existiert
+
+48
+00:07:31,000 --> 00:07:55,900
+sieht das wie folgt aus pos = strng.find('aa') print pos, Speichern - Ausfuehren
+
+49
+00:07:56,000 --> 00:08:01,900
+waere der zurueckgegebene Wert -1
+
+50
+00:08:02,000 --> 00:08:09,900
+Wir koennen auch jedes einzelne Wort in der Zeichenfolge mithilfe des Split-Befehls in eine Liste schreiben
+
+51
+00:08:10,000 --> 00:08:13,900
+Wir spalten die Zeichenfolge an jedem Leerzeichen mit Hilfe von
+
+52
+00:08:14,000 --> 00:08:38,900
+print strng.split(' '), Speichern und Ausfuehren
+
+53
+00:08:39,000 --> 00:08:44,900
+es gibt eine Liste mit ['Hallo', 'Welt']
+
+54
+00:08:45,000 --> 00:08:48,900
+Ausserdem gibt es noch viele andere Zeichenketten-Funktionen
+
+55
+00:08:50,000 --> 00:08:54,900
+OK, Tschau und viel Glueck
